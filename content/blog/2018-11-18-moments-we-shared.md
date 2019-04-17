@@ -3,8 +3,10 @@ title: Moments We Shared
 author: Bymunije
 date: '2018-11-18'
 slug: moments-we-shared
-categories: []
-tags: []
+categories:
+  - life
+tags: 
+  - thinking
 description: ''
 featured: ''
 featuredalt: ''
