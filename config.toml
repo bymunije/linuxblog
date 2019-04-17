@@ -12,6 +12,11 @@ enableRobotsTXT = true
 canonifyURLs = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
+[taxonomies]
+  tag = "tags"
+  series = "series"
+  category = "categories"
+
 [params]
   disqus               = "bymunije"
   # Sets the meta tag description
