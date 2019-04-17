@@ -366,14 +366,14 @@
 
 <h1 id="rstudio配置">Rstudio配置</h1>
 
-<p>安装好上述软件后，需要对rstudio进行一下简单配置：</p>
+<p>安装好上述软件后，需要对Rstudio进行简单的配置：</p>
 
 <ul>
-<li>Tools -&gt; Global Options -&gt; Sweave -&gt; Weave Rnw files using:knitr</li>
+<li><code>Tools -&gt; Global Options -&gt; Sweave -&gt; Weave Rnw files using:knitr</code></li>
 
-<li><p>Tools -&gt; Global Options -&gt; Sweave -&gt; Typeset LaTex into PDF using:XeLaTeX,这两个是生成PDF文件用的，中文用户最好选择XeLaTeX</p></li>
+<li><p><code>Tools -&gt; Global Options -&gt; Sweave -&gt; Typeset LaTex into PDF using:XeLaTeX</code>,这两个是生成PDF文件用的，中文用户最好选择XeLaTeX</p></li>
 
-<li><p>Tools -&gt; Global Options -&gt; Git/SVN -&gt; Git executable</p></li>
+<li><p><code>Tools -&gt; Global Options -&gt; Git/SVN -&gt; Git executable</code></p></li>
 </ul>
 
 <h1 id="安装blogdown和hugo">安装blogdown和hugo</h1>
@@ -401,17 +401,17 @@ devtools::install_github(&quot;rstudio/blogdown&quot;)
 
 <h1 id="github新建一个仓库">Github新建一个仓库</h1>
 
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/2.PNG" alt="" width="400px" height="200px"/></p>
+<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/2.PNG" alt="" width="400px" height="300px"/></p>
 
 <h1 id="blogdown建站">blogdown建站</h1>
 
 <h2 id="1-创建项目">1.创建项目</h2>
 
-<p>回到Rstudio，<code>File -&gt; New Project -&gt; Version Control -&gt; Git</code>，然后填写Repository URL,Project directory name会自动生成，选择一个合适的文件夹存放，点击Create Project创建项目</p>
+<p>回到Rstudio，<code>File -&gt; New Project -&gt; Version Control -&gt; Git</code>，然后填写<code>Repository URL</code>,<code>Project directory name</code>会自动生成，选择一个合适的文件夹存放，点击<code>Create Project</code>创建项目</p>
 
 <h3 id="设置gitignore">设置gitignore</h3>
 
-<p>打开rstudio右下角的Files标签，点击.gitignore文件，因为有些文件不需要啊上传到github, 比如public，是hugo渲染后的网页， 我们本地预览就够了，因为在Netlify部署的时候会重新渲染</p>
+<p>打Rstudio右下角的<code>Files</code>标签，点击<code>.gitignore</code>文件，因为有些文件不需要啊上传到github, 比如public，是hugo渲染后的网页， 本地预览即可，因为在Netlify部署的时候会重新渲染</p>
 
 <pre><code>.Rproj.user
 .Rhistory
@@ -424,8 +424,9 @@ public/
 
 <h2 id="2-初始化blogdown">2.初始化blogdown</h2>
 
-<p>打开<code>Rstudio,File -&gt; New Project -&gt; New Directory -&gt; Website using blogdown</code>，因为我们已经安装了hugo，所以去掉hugo选项,主题可以修改，点击Create Project创建项目
-<img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/1.png" alt="" width="400px" height="200px"/></p>
+<p>打开<code>Rstudio,File -&gt; New Project -&gt; New Directory -&gt; Website using blogdown</code>，因为已经安装了hugo，所以去掉hugo选项,主题可以修改，点击<code>Create Project</code>创建项目</p>
+
+<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/1.png" alt="" width="400px" height="300px"/></p>
 
 <h2 id="3-本地项目同步到github仓库">3.本地项目同步到github仓库</h2>
 
@@ -441,37 +442,39 @@ git push -u origin master
 
 <h2 id="4-本地运行网站">4.本地运行网站</h2>
 
-<p>点击Rstudio菜单Help下面的Addins-&gt;Serve Site，可能会提示安装几个包例如shiny、miniUI等，点击yes安装ok,，其实点击这个跟在console里面输入blogdown::serve_site()是一样的：</p>
+<p>点击Rstudio菜单<code>Help</code>下面的<code>Addins-&gt;Serve Site</code>，可能会提示安装几个包例如shiny、miniUI等，点击yes安装ok,，其实点击这个跟在console里面输入<code>blogdown::serve_site()</code>是一样的：</p>
 
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/3.png" alt="" width="400px" height="200px"/></p>
+<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/3.png" alt="" width="400px" height="300px"/></p>
 
 <h1 id="设置netlify">设置Netlify</h1>
 
 <h2 id="1-注册netlify">1.注册Netlify</h2>
 
-<p>打开Netlify(<a href="https://app.netlify.com/signup)主页，直接在">https://app.netlify.com/signup)主页，直接在</a> <code>Sign up with one of the following</code>下面选择GitHub</p>
+<p>打开Netlify(<a href="https://app.netlify.com/signup">https://app.netlify.com/signup</a>)      主页,直接在 <code>Sign up with one of the following</code>下面选择GitHub</p>
 
 <h2 id="2-绑定github">2.绑定Github</h2>
 
 <p>登录Netlify后，点击导航栏<code>Sites</code>，再点击右上角<code>New site from Git</code>，再点击Github进行下列操作：</p>
 
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/4.png" alt="" width="400px" height="200px"/></p>
+<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/4.png" alt="" width="400px" height="300px"/></p>
 
 <p>点击<code>deploy site</code>生成网站</p>
 
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/5.png" alt="" width="400px" height="200px"/></p>
+<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/5.png" alt="" width="400px" height="300px"/></p>
 
 <h1 id="更新博客内容">更新博客内容</h1>
 
-<p>打开Rstudio，<code>Rstudio,File -&gt; New Project -&gt; exist Directory -&gt; blogdown dictionary</code>，点击右上角Git标签，点击commit，选择更新内容，填写commit message点击commit -&gt; push</p>
+<p>打开Rstudio，<code>Rstudio,File -&gt; New Project -&gt; exist Directory -&gt; blogdown dictionary</code>，点击右上角Git标签，点击commit，选择更新内容，填写<code>commit message</code>点击<code>commit -&gt; push</code></p>
 
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/7.jpeg" alt="" width="400px" height="200px"/></p>
+<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/7.jpeg" alt="" width="400px" height="300px"/></p>
 
 <h1 id="quenstion">Quenstion:</h1>
 
 <h4 id="1-git在github远程创建仓库后-利用gitbash进行提交本地文件的时候出现如下错误">1.git在github远程创建仓库后, 利用gitbash进行提交本地文件的时候出现如下错误：</h4>
 
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/8.png" alt="" width="700px" height="400px"/></p>
+<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/8.png" alt="" width="700px" height="250px"/></p>
+
+<p>解决办法1:</p>
 
 <pre><code>1: 进行push前先将远程仓库pull到本地仓库
 $ git pull origin master    #git pull --rebase origin master
@@ -504,21 +507,19 @@ git branch -D tmp
 
 <p>解决办法：</p>
 
-<p>1.git bash进入你的项目目录，输入：</p>
+<p>1.git bash进入你的项目目录，输入<code>git config --global credential.helper store</code>,然后会在本地生成一个文本，记录账号和密码</p>
 
-<pre><code class="language-git">
-2.使用上述的命令配置好之后，再操作一次git pull，它会提示你输入账号密码，之后就不需要再次输入密码
+<p>2.使用上述的命令配置好之后，再操作一次git pull，它会提示你输入账号密码，之后就不需要再次输入密码</p>
 
-3. 设置Git
+<h4 id="3-设置git">3. 设置Git</h4>
 
-(1).设置用户名和email。
+<p>(1).设置用户名和email。</p>
 
+<pre><code>git config --global user.name &quot;Your Name&quot;
+git config --global user.email &quot;youremail@domain.com&quot;
 </code></pre>
 
-<p>git config &ndash;global user.name &ldquo;Your Name&rdquo;
-git config &ndash;global user.email &ldquo;youremail@domain.com&rdquo;
-```
-Home目录下会新建一个.gitconfig文件</p>
+<p>Home目录下会新建一个.gitconfig文件</p>
 
 <p>(2).GitHub账号添加SSH Keys</p>
 
@@ -535,12 +536,12 @@ Home目录下会新建一个.gitconfig文件</p>
 <li>Copy SSH Key</li>
 </ul>
 
-<p>用vim打开文件id_rsa.pub文件内的内容，粘帖到github帐号管理的添加SSH key界面中</p>
+<p>用vim打开文件<code>id_rsa.pub</code>文件内的内容，粘帖到github帐号管理的添加SSH key界面中</p>
 
 <p><code>vim ~/.ssh/id_rsa.pub</code>
 - 添加到GitHub</p>
 
-<p>登录github-&gt; Accounting settings图标-&gt; SSH key-&gt; Add SSH key-&gt; 填写SSH key的名称，然后将拷贝的~/.ssh/id_rsa.pub文件内容粘帖-&gt; add key”按钮添加。</p>
+<p>登录github-&gt; Accounting settings图标-&gt; SSH key-&gt; Add SSH key-&gt; 填写SSH key的名称，然后将拷贝的<code>~/.ssh/id_rsa.pub</code>文件内容粘帖-&gt; add key”按钮添加。</p>
 
 <ul>
 <li>测试</li>
