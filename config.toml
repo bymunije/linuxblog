@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Hugo Future Imperfect"
+title = "Bymunije"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
@@ -12,26 +12,27 @@ enableRobotsTXT = true
 canonifyURLs = true
 
 [params]
+  disqus               = "bymunije"
   # Sets the meta tag description
   description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
   # Sets the navbarTitle that appears in the top left of the navigation bar
-  navbarTitle          = "Future Imperfect"
+  navbarTitle          = "Small World"
   # Sets where "View More Posts" links
-  viewMorePostLink     = "/blog/"
+  viewMorePostLink     = "/blog/:Bymunije/"
 
 # Optional Params
   # Sets navbarTitle to match the section of the website
   dynamicTitles        = true
   # Sets RSS icons to appear on the sidebar with the social media buttons
-  rssAppearAtTop       = true
+  rssAppearAtTop       = false
   rssAppearAtBottom    = true
   # Sets Social Media icons to appear on the sidebar
-  socialAppearAtTop    = true
+  socialAppearAtTop    = false
   socialAppearAtBottom = true
   # Sets Categories to sort by number of posts instead of alphabetical
   categoriesByCount    = true
   # set to show or to hide categories in the sidebar
-  showSidebarCategories = true
+  showSidebarCategories = false
   # Sets Estimated Reading Time to appear in post headers
   includeReadingTime   = true
   # Sets the Favicon and Version for the site. Default support is for
@@ -43,13 +44,13 @@ canonifyURLs = true
   # Sets Social Share links to appear on posts
   socialShare          = true
   # Sets specific share to appear on posts (default behavior is to appear)
-  socialShareTwitter   = true
-  socialShareGoogleplus = true
-  socialShareFacebook  = true
-  socialShareReddit    = true
-  socialShareLinkedin  = true
-  socialShareStumbleupon = true
-  socialSharePinterest = true
+  socialShareTwitter   = false
+  socialShareGoogleplus = false
+  socialShareFacebook  = false
+  socialShareReddit    = false
+  socialShareLinkedin  = false
+  socialShareStumbleupon = false
+  socialSharePinterest = false
   socialShareEmail     = true
 
   # Load custom CSS or JavaScript files. The variable is an array so that you
@@ -74,11 +75,11 @@ canonifyURLs = true
 # prefer to use. See Staticman.yml for additional settings.
 [params.staticman]
   # Sets Statiman to be active
-  staticman = false
+  staticman = true
   # Sets the location for Staticman to connect to
-  username  = ""
-  repo      = ""
-  branch    = ""
+  username  = "bymunije"
+  repo      = "myblog"
+  branch    = "master"
 
   [params.staticman.recaptcha]
     sitekey = "SITE_KEY"
@@ -87,16 +88,16 @@ canonifyURLs = true
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
 [params.intro]
-  header    = "Hugo Future Imperfect"
+  header    = "Small World"
 
-  paragraph = "Another fine responsive site template by <a href=\"http://html5up.net\">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i>"
+  paragraph = "Be yourself <a href=\"http://html5up.net\"></a>. <i class='fa fa-hand-peace-o'></i>"
 
-  about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
+  about     = "Welcome to my heart <a href=\"http://html5up.net\"></a>"
 
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.
   [params.intro.pic]
-    src       = "/img/main/logo.jpg"
+    src       = "/img/main/Wallions278789.jpg"
     # Sets Image to be a cirlce
     circle    = false
     # Sets Image to be Future Imperfect's hexagon
@@ -106,7 +107,7 @@ canonifyURLs = true
 
 [params.postAmount]
 # Sets the number of recent posts to show in the sidebar. The default value is 5.
-    sidebar = 5
+    sidebar = 3
 
 # Sets the menu items in the navigation bar
 # Identifier prepends a Font Awesome icon to the menu item
@@ -151,47 +152,47 @@ canonifyURLs = true
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github           = "jpescador/hugo-future-imperfect"
-  gitlab           = ""
+  github           = "bymunije"
+  # gitlab           = ""
   stackoverflow    = "" # User Number
-  bitbucket        = ""
-  jsfiddle         = ""
-  codepen          = ""
+  # bitbucket        = ""
+  # jsfiddle         = ""
+  # codepen          = ""
   # Visual Art Communities
-  deviantart       = ""
-  flickr           = "example"
-  behance          = ""
-  dribbble         = ""
+  # deviantart       = ""
+  # flickr           = "example"
+  # behance          = ""
+  # dribbble         = ""
   # Publishing Communities
-  wordpress        = ""
-  medium           = ""
+  # wordpress        = ""
+  # medium           = ""
   # Professional/Business Oriented Communities
-  linkedin         = "example"
-  linkedin_company = "examplebusiness"
-  foursquare       = ""
-  xing             = ""
-  slideshare       = ""
+  # linkedin         = ""
+  # linkedin_company = ""
+  # foursquare       = ""
+  # xing             = ""
+  # slideshare       = ""
   # Social Networks
-  facebook         = "example"
-  googleplus       = ""
-  reddit           = "example"
-  quora            = ""
+  # facebook         = ""
+  # googleplus       = ""
+  # reddit           = ""
+  # quora            = ""
   youtube          = ""
-  vimeo            = ""
-  whatsapp         = "" # WhatsApp Number
+  # vimeo            = ""
+  # whatsapp         = "" # WhatsApp Number
     # WeChat and QQ need testing.
     wechat         = ""
     qq             = "" # User ID Number
-  instagram        = "example"
-  tumblr           = ""
-  twitter          = "example"
-  skype            = ""
-  snapchat         = ""
-  pinterest        = "example"
-  telegram         = "example"
-  vine             = ""
-  googlescholar    = ""
-  orcid            = ""
-  researchgate     = "example"
+  instagram        = "Bymunije"
+  # tumblr           = ""
+  # twitter          = "example"
+  # skype            = ""
+  # snapchat         = ""
+  # pinterest        = "example"
+  # telegram         = "example"
+  # vine             = ""
+  # googlescholar    = ""
+  # orcid            = ""
+  # researchgate     = "example"
   # Email
-  email            = "example"
+  email            = "bymunije@gmail.com"
