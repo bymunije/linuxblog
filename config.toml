@@ -1,15 +1,16 @@
-baseurl = "/"
+baseurl = "https://dbzhang.netlify.com/"
 languageCode = "en-us"
 title = "Bymunije"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
-paginate = 5
-disqusShortname = "shortname"
+paginate = 3
+disqusShortname = "bymunije"
 googleAnalytics = ""
 pluralizeListTitles = false
 # Set the followings to true as part of your site SEO
 enableRobotsTXT = true
 canonifyURLs = true
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
   disqus               = "bymunije"
@@ -18,7 +19,7 @@ canonifyURLs = true
   # Sets the navbarTitle that appears in the top left of the navigation bar
   navbarTitle          = "Small World"
   # Sets where "View More Posts" links
-  viewMorePostLink     = "/blog/:Bymunije/"
+  viewMorePostLink     = "http://100.64.166.214:20004/p/4321/"
 
 # Optional Params
   # Sets navbarTitle to match the section of the website
@@ -42,7 +43,7 @@ canonifyURLs = true
   loadFavicon          = false
   faviconVersion       = ""
   # Sets Social Share links to appear on posts
-  socialShare          = true
+  socialShare          = false
   # Sets specific share to appear on posts (default behavior is to appear)
   socialShareTwitter   = false
   socialShareGoogleplus = false
@@ -75,11 +76,11 @@ canonifyURLs = true
 # prefer to use. See Staticman.yml for additional settings.
 [params.staticman]
   # Sets Statiman to be active
-  staticman = true
+  staticman = false
   # Sets the location for Staticman to connect to
-  username  = "bymunije"
-  repo      = "myblog"
-  branch    = "master"
+  username  = ""
+  repo      = ""
+  branch    = ""
 
   [params.staticman.recaptcha]
     sitekey = "SITE_KEY"
@@ -92,7 +93,7 @@ canonifyURLs = true
 
   paragraph = "Be yourself <a href=\"http://html5up.net\"></a>. <i class='fa fa-hand-peace-o'></i>"
 
-  about     = "Welcome to my heart <a href=\"http://html5up.net\"></a>"
+  about     = "Welcome to my heart! <a href=\"http://html5up.net\"></a> <i class='fa fa-hand-peace-o'></i>"
 
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.
@@ -152,9 +153,9 @@ canonifyURLs = true
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github           = "bymunije"
+  github           = "https://github.com/bymunije"
   # gitlab           = ""
-  stackoverflow    = "" # User Number
+  # stackoverflow    = "" # User Number
   # bitbucket        = ""
   # jsfiddle         = ""
   # codepen          = ""
@@ -177,13 +178,13 @@ canonifyURLs = true
   # googleplus       = ""
   # reddit           = ""
   # quora            = ""
-  youtube          = ""
+  # youtube          = ""
   # vimeo            = ""
   # whatsapp         = "" # WhatsApp Number
     # WeChat and QQ need testing.
-    wechat         = ""
-    qq             = "" # User ID Number
-  instagram        = "Bymunije"
+    # wechat         = ""
+    # qq             = "" # User ID Number
+  instagram        = "https://www.instagram.com/bymunije/"
   # tumblr           = ""
   # twitter          = "example"
   # skype            = ""
