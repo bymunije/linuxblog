@@ -98,7 +98,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
   paragraph = "Be yourself <a href=\"http://html5up.net\"></a>. <i class='fa fa-hand-peace-o'></i>"
 
-  about     = "Welcome to my heart! <a href=\"http://html5up.net\"></a> <i class='fa fa-hand-peace-o'></i>"
+  about     = "WELCOME TO MY HEART! <a href=\"http://html5up.net\"></a> <i class='fa fa-hand-peace-o'></i>"
 
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.
@@ -124,16 +124,10 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   weight = 1
 
 [[menu.main]]
-  name = "About"
-  url = "/about/"
-  identifier = "fa fa-id-card-o"
-  weight = 2
-
-[[menu.main]]
   name = "Blog"
   url = "/blog/"
   identifier = "fa fa-newspaper-o"
-  weight = 3
+  weight = 2
 
 #[[menu.main]]
 #  name = "Itemized"
@@ -145,6 +139,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   name = "Categories"
   url = "/categories/"
   identifier = "fa fa-sitemap"
+  weight = 3
+  
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  identifier = "fa fa-id-card-o"
   weight = 4
 
 #[[menu.main]]
