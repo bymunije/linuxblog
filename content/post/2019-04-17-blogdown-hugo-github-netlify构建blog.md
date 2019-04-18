@@ -35,25 +35,19 @@ type: post
 
 ## 安装blogdown：
 
-```
-install.packages('blogdown')
-```
+```install.packages('blogdown')```
 
 ## 安装hugo：
 
-```
-blogdown::install_hugo()
-```
+```blogdown::install_hugo()```
 如果报错，可以直接安装开发版：
-```
-install.packages("devtools")
-devtools::install_github("rstudio/blogdown")
-```
+```install.packages("devtools") devtools::install_github("rstudio/blogdown")```
+   
 如果还是报错，就手动下载安装：
-```
-blogdown:::install_hugo_bin("d:/hugo.exe")
-```
+```blogdown:::install_hugo_bin("d:/hugo.exe")```
+
 # Github新建一个仓库
+
 <img src="/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/2.PNG" alt="" width="400px" height="300px"/>
 
 # blogdown建站
