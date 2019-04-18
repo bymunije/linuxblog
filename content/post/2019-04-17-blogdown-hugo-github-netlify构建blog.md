@@ -25,7 +25,9 @@ type: post
 安装好上述软件后，需要对Rstudio进行简单的配置：
 
 - ```Tools -> Global Options -> Sweave -> Weave Rnw files using:knitr```
-- ```Tools -> Global Options -> Sweave -> Typeset LaTex into PDF using:XeLaTeX```,这两个是生成PDF文件用的，中文用户最好选择XeLaTeX
+- ```Tools -> Global Options -> Sweave -> Typeset LaTex into PDF using:XeLaTeX```,
+
+这两个是生成PDF文件用的，中文用户最好选择XeLaTeX
 
 - ```Tools -> Global Options -> Git/SVN -> Git executable```
 
@@ -153,7 +155,8 @@ git branch -D tmp
 
 解决办法：
 
-1.git bash进入你的项目目录，输入```git config --global credential.helper store```,然后会在本地生成一个文本，记录账号和密码
+1.git bash进入你的项目目录，输入
+```git config --global credential.helper store```,然后会在本地生成一个文本，记录账号和密码
 
 2.使用上述的命令配置好之后，再操作一次git pull，它会提示你输入账号密码，之后就不需要再次输入密码
 
@@ -169,21 +172,26 @@ Home目录下会新建一个.gitconfig文件
 
 (2).GitHub账号添加SSH Keys
 
-以公钥认证方式访问SSH协议的Git服务器时无需输入口令，而且更安全。（访问HTTP协议的Git服务器时，比如提交修改，每次都需要输入口令）
+以公钥认证方式访问SSH协议的Git服务器时无需输入口令，而且更安全。
+（访问HTTP协议的Git服务器时，比如提交修改，每次都需要输入口令）
 
 - 创建SSH key
 
 ```ssh-keygen -t rsa -C "youremail@163.com"```
-系统会提示key的保存位置（一般是~/.ssh目录）和指定口令，保持默认，连续三次回车即可。
+系统会提示key的保存位置（一般是~/.ssh目录）和指定口令，
+保持默认，连续三次回车即可。
 
 - Copy SSH Key
 
-用vim打开文件```id_rsa.pub```文件内的内容，粘帖到github帐号管理的添加SSH key界面中
+用vim打开文件```id_rsa.pub```文件内的内容，
+粘帖到github帐号管理的添加SSH key界面中
 
 ```vim ~/.ssh/id_rsa.pub```
 - 添加到GitHub
 
-登录github-> Accounting settings图标-> SSH key-> Add SSH key-> 填写SSH key的名称，然后将拷贝的```~/.ssh/id_rsa.pub```文件内容粘帖-> add key”按钮添加。
+登录github-> Accounting settings图标-> SSH key-> Add SSH key-> 
+填写SSH key的名称，然后将拷贝的```~/.ssh/id_rsa.pub```
+文件内容粘帖-> add key”按钮添加。
 
 - 测试
 
