@@ -17,6 +17,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   series = "series"
   category = "categories"
 
+[blackfriday]
+  angledQuotes = true
+  fractions = false
+  plainIDAnchors = true
+  extensions = ["hardLineBreak"]
+  
 [params]
   disqus               = "bymunije"
   # Sets the meta tag description
