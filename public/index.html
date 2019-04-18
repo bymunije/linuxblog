@@ -21,8 +21,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2019",
-        "datePublished": "2019-04-17 00:00:00 \x2b0000 UTC",
-        "dateModified" : "2019-04-17 00:00:00 \x2b0000 UTC",
+        "datePublished": "2019-04-18 00:00:00 \x2b0000 UTC",
+        "dateModified" : "2019-04-18 00:00:00 \x2b0000 UTC",
         "url" : "\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -56,7 +56,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" />
 
-<meta property="og:updated_time" content="2019-04-17T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-04-18T00:00:00&#43;00:00"/>
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -226,6 +226,18 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="./blog/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/">Blogdown&#43;Hugo&#43;Github&#43;Netlify构建blog</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-04-18'>
+                                    April 18, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="./post/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/">Blogdown&#43;Hugo&#43;Github&#43;Netlify构建blog</a></h3>
                                 
                                 <time class="published" datetime=
@@ -296,18 +308,6 @@
 
                         </article>
                 
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="./blog/%E7%94%9F%E6%97%A5%E9%81%87%E4%B8%8A%E7%BB%84%E4%BC%9A/">生日遇上组会</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2018-09-12'>
-                                    September 12, 2018</time>
-                            </header>
-                            
-
-                        </article>
-                
 
                 
                     <a href=
@@ -330,7 +330,7 @@
   <header>
     <div class="title">
         
-            <h2><a href="./post/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/">Blogdown&#43;Hugo&#43;Github&#43;Netlify构建blog</a></h2>
+            <h2><a href="./blog/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/">Blogdown&#43;Hugo&#43;Github&#43;Netlify构建blog</a></h2>
         
         
     </div>
@@ -338,9 +338,9 @@
         
 
         <time class="published"
-            datetime='2019-04-17'>
-            April 17, 2019</time>
-        <span class="author">Bymunije</span>
+            datetime='2019-04-18'>
+            April 18, 2019</time>
+        <span class="author">bymunije</span>
         
             <p>2 minute read</p>
         
@@ -383,46 +383,36 @@
 
 <h2 id="安装blogdown">安装blogdown：</h2>
 
-<pre><code>install.packages('blogdown')
-</code></pre>
+<pre><code class="language-install.packages('blogdown')```">
+## 安装hugo：
 
-<h2 id="安装hugo">安装hugo：</h2>
+```blogdown::install_hugo()```
+如果报错，可以直接安装开发版：
+```install.packages(&quot;devtools&quot;) devtools::install_github(&quot;rstudio/blogdown&quot;)```
+   
+如果还是报错，就手动下载安装：
+```blogdown:::install_hugo_bin(&quot;d:/hugo.exe&quot;)```
+a
+# Github新建一个仓库
 
-<pre><code>blogdown::install_hugo()
-</code></pre>
+&lt;img src=&quot;/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/2.PNG&quot; alt=&quot;&quot; width=&quot;400px&quot; height=&quot;300px&quot;/&gt;
 
-<p>如果报错，可以直接安装开发版：</p>
+# blogdown建站
 
-<pre><code>install.packages(&quot;devtools&quot;)
-devtools::install_github(&quot;rstudio/blogdown&quot;)
-</code></pre>
+## 1.创建项目
 
-<p>如果还是报错，就手动下载安装：</p>
+回到Rstudio，`File -&gt; New Project -&gt; Version Control -&gt; Git`，然后填写`Repository URL`,`Project directory name`会自动生成，选择一个合适的文件夹存放，点击`Create Project`创建项目
 
-<pre><code>blogdown:::install_hugo_bin(&quot;d:/hugo.exe&quot;)
-</code></pre>
+### 设置gitignore
 
-<h1 id="github新建一个仓库">Github新建一个仓库</h1>
-
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/2.PNG" alt="" width="400px" height="300px"/></p>
-
-<h1 id="blogdown建站">blogdown建站</h1>
-
-<h2 id="1-创建项目">1.创建项目</h2>
-
-<p>回到Rstudio，<code>File -&gt; New Project -&gt; Version Control -&gt; Git</code>，然后填写<code>Repository URL</code>,<code>Project directory name</code>会自动生成，选择一个合适的文件夹存放，点击<code>Create Project</code>创建项目</p>
-
-<h3 id="设置gitignore">设置gitignore</h3>
-
-<p>打Rstudio右下角的<code>Files</code>标签，点击<code>.gitignore</code>文件，因为有些文件不需要啊上传到github, 比如public，是hugo渲染后的网页， 本地预览即可，因为在Netlify部署的时候会重新渲染</p>
-
-<pre><code>.Rproj.user
+打Rstudio右下角的`Files`标签，点击`.gitignore`文件，因为有些文件不需要啊上传到github, 比如public，是hugo渲染后的网页， 本地预览即可，因为在Netlify部署的时候会重新渲染
+```.Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 blogdown
 .DS_Store
-public/
+public/ 
 </code></pre>
 
 <h2 id="2-初始化blogdown">2.初始化blogdown</h2>
@@ -510,21 +500,20 @@ git branch -D tmp
 
 <p>解决办法：</p>
 
-<p>1.git bash进入你的项目目录，输入</p>
+<p>1.git bash进入你的项目目录，输入
+<code>git config --global credential.helper store</code>,然后会在本地生成一个文本，记录账号和密码</p>
 
-<pre><code class="language-git">
-2.使用上述的命令配置好之后，再操作一次git pull，它会提示你输入账号密码，之后就不需要再次输入密码
+<p>2.使用上述的命令配置好之后，再操作一次git pull，它会提示你输入账号密码，之后就不需要再次输入密码</p>
 
-#### 3. 设置Git
+<h4 id="3-设置git">3. 设置Git</h4>
 
-(1).设置用户名和email。
+<p>(1).设置用户名和email。</p>
 
+<pre><code>git config --global user.name &quot;Your Name&quot;
+git config --global user.email &quot;youremail@domain.com&quot;
 </code></pre>
 
-<p>git config &ndash;global user.name &ldquo;Your Name&rdquo;
-git config &ndash;global user.email &ldquo;youremail@domain.com&rdquo;
-```
-Home目录下会新建一个.gitconfig文件</p>
+<p>Home目录下会新建一个.gitconfig文件</p>
 
 <p>(2).GitHub账号添加SSH Keys</p>
 
@@ -544,10 +533,11 @@ Home目录下会新建一个.gitconfig文件</p>
 </ul>
 
 <p>用vim打开文件<code>id_rsa.pub</code>文件内的内容，
-粘帖到github帐号管理的添加SSH key界面中</p>
+粘帖到github帐号管理的添加SSH key界面中<code>vim ~/.ssh/id_rsa.pub</code></p>
 
-<p><code>vim ~/.ssh/id_rsa.pub</code>
-- 添加到GitHub</p>
+<ul>
+<li>添加到GitHub</li>
+</ul>
 
 <p>登录github-&gt; Accounting settings图标-&gt; SSH key-&gt; Add SSH key-&gt;
 填写SSH key的名称，然后将拷贝的<code>~/.ssh/id_rsa.pub</code>
@@ -623,8 +613,8 @@ Home目录下会新建一个.gitconfig文件</p>
 
 <ul class="actions pagination">
     
-        <li><a href="./post/%E6%B2%A1%E6%9C%89%E5%B9%B4%E5%91%B3%E7%9A%84%E6%9C%AC%E5%91%BD%E5%B9%B4/"
-                class="button big previous">没有年味的本命年</a></li>
+        <li><a href="./blog/%E7%A6%BB%E5%BC%80%E6%98%AF%E4%B8%BA%E4%BA%86%E6%9B%B4%E5%A5%BD%E7%9A%84%E5%9B%9E%E6%9D%A5/"
+                class="button big previous">离开是为了更好的回来</a></li>
     
 
     
@@ -664,7 +654,7 @@ Home目录下会新建一个.gitconfig文件</p>
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by Bymunije&amp;body=%2fpost%2fblogdown-hugo-github-netlify%25E6%259E%2584%25E5%25BB%25BAblog%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by bymunije&amp;body=%2fblog%2fblogdown-hugo-github-netlify%25E6%259E%2584%25E5%25BB%25BAblog%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -710,6 +700,20 @@ Home目录下会新建一个.gitconfig文件</p>
           
         
 
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="./blog/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/">Blogdown&#43;Hugo&#43;Github&#43;Netlify构建blog</a>
+              </h3>
+              
+              <time class="published" datetime='2019-04-18'>
+                April 18, 2019
+              </time>
+            </header>
+            
+
+          </article>
         
           <article class="mini-post">
             <header>
@@ -789,20 +793,6 @@ Home目录下会新建一个.gitconfig文件</p>
               
               <time class="published" datetime='2018-11-18'>
                 November 18, 2018
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="./blog/%E7%94%9F%E6%97%A5%E9%81%87%E4%B8%8A%E7%BB%84%E4%BC%9A/">生日遇上组会</a>
-              </h3>
-              
-              <time class="published" datetime='2018-09-12'>
-                September 12, 2018
               </time>
             </header>
             
