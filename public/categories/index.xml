@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Bymunije</title>
+    <title>Bymunije</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on Bymunije</description>
+    <description>Recent content on Bymunije</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Apr 2019 00:00:00 +0000</lastBuildDate>
@@ -12,34 +12,33 @@
     
     
     <item>
-      <title></title>
-      <link>/categories/</link>
-      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Fancy App 1</title>
+      <link>/itemized/item1/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/</guid>
-      <description></description>
+      <guid>/itemized/item1/</guid>
+      <description> App 1 </description>
     </item>
     
     <item>
-      <title>Study</title>
-      <link>/categories/study/</link>
-      <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
+      <title>Fancy App 2</title>
+      <link>/itemized/item2/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/study/</guid>
-      <description></description>
+      <guid>/itemized/item2/</guid>
+      <description> App 2 </description>
     </item>
     
     <item>
-      <title>life</title>
-      <link>/categories/life/</link>
-      <pubDate>Sun, 17 Feb 2019 00:00:00 +0000</pubDate>
+      <title>Fancy App 3</title>
+      <link>/itemized/item3/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/life/</guid>
-      <description></description>
+      <guid>/itemized/item3/</guid>
+      <description> App 3 </description>
     </item>
     
-  </channel>
-</rss>    <item>
+    <item>
       <title>Fancy App 4</title>
       <link>/itemized/item4/</link>
       <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>

@@ -18,9 +18,8 @@
       
       <guid>/post/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/</guid>
       <description>软件准备  安装R(https://www.r-project.org/) 安装rstudio(https://www.rstudio.com/) 安装git(https://git-scm.com/)  Rstudio配置 安装好上述软件后，需要对Rstudio进行简单的配置：
- Tools -&amp;gt; Global Options -&amp;gt; Sweave -&amp;gt; Weave Rnw files using:knitr Tools -&amp;gt; Global Options -&amp;gt; Sweave -&amp;gt; Typeset LaTex into PDF using:XeLaTeX,这两个是生成PDF文件用的，中文用户最好选择XeLaTeX
- Tools -&amp;gt; Global Options -&amp;gt; Git/SVN -&amp;gt; Git executable
-  安装blogdown和hugo 安装blogdown： install.packages(&#39;blogdown&#39;)  安装hugo： blogdown::install_hugo()  如果报错，可以直接安装开发版：
+ Tools -&amp;gt; Global Options -&amp;gt; Sweave -&amp;gt; Weave Rnw files using:knitr Tools -&amp;gt; Global Options -&amp;gt; Sweave -&amp;gt; Typeset LaTex into PDF using:XeLaTeX,  这两个是生成PDF文件用的，中文用户最好选择XeLaTeX
+ Tools -&amp;gt; Global Options -&amp;gt; Git/SVN -&amp;gt; Git executable  安装blogdown和hugo 安装blogdown： install.packages(&#39;blogdown&#39;)  安装hugo： blogdown::install_hugo()  如果报错，可以直接安装开发版：
 install.packages(&amp;quot;devtools&amp;quot;) devtools::install_github(&amp;quot;rstudio/blogdown&amp;quot;)  如果还是报错，就手动下载安装：
 blogdown:::install_hugo_bin(&amp;quot;d:/hugo.exe&amp;quot;)  Github新建一个仓库 blogdown建站 1.创建项目 回到Rstudio，File -&amp;gt; New Project -&amp;gt; Version Control -&amp;gt; Git，然后填写Repository URL,Project directory name会自动生成，选择一个合适的文件夹存放，点击Create Project创建项目</description>
     </item>
