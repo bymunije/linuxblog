@@ -12,17 +12,12 @@
     
     
     <item>
-      <title>Blogdown&#43;Hugo&#43;Github&#43;Netlify构建blog</title>
-      <link>/blog/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/</link>
+      <title>hfskfjhkjfkjfkjghdkgdghdghjhgfgkjjgjgkfgjdjkgdjfgkjfgjdfgkgs</title>
+      <link>/post/hfskfjhkjfkjfkjghdkgdghdghjhgfgkjjgjgkfgjdjkgdjfgkjfgjdfgkgs/</link>
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/</guid>
-      <description>软件准备  安装R(https://www.r-project.org/) 安装rstudio(https://www.rstudio.com/) 安装git(https://git-scm.com/)  Rstudio配置 安装好上述软件后，需要对Rstudio进行简单的配置：
- Tools -&amp;gt; Global Options -&amp;gt; Sweave -&amp;gt; Weave Rnw files using:knitr Tools -&amp;gt; Global Options -&amp;gt; Sweave -&amp;gt; Typeset LaTex into PDF using:XeLaTeX,这两个是生成PDF文件用的，中文用户最好选择XeLaTeX
- Tools -&amp;gt; Global Options -&amp;gt; Git/SVN -&amp;gt; Git executable
-  安装blogdown和hugo 安装blogdown： install.packages(&#39;blogdown&#39;)  安装hugo： blogdown::install_hugo()  如果报错，可以直接安装开发版：
-install.packages(&amp;quot;devtools&amp;quot;) devtools::install_github(&amp;quot;rstudio/blogdown&amp;quot;)  如果还是报错，就手动下载安装：
-blogdown:::install_hugo_bin(&amp;quot;d:/hugo.exe&amp;quot;)  Github新建一个仓库 blogdown建站 1.创建项目 回到Rstudio，File -&amp;gt; New Project -&amp;gt; Version Control -&amp;gt; Git，然后填写Repository URL,Project directory name会自动生成，选择一个合适的文件夹存放，点击Create Project创建项目</description>
+      <guid>/post/hfskfjhkjfkjfkjghdkgdghdghjhgfgkjjgjgkfgjdjkgdjfgkjfgjdfgkgs/</guid>
+      <description>fdfdferg dgfgerger dfdsfgegregegergrewgergergregerg sdgfdergregreg gergrehgtrhtrhrth rhtrhythjytjytj  fedfedgsggsegret1hgfhjtryjtryjjhtjhteyje</description>
     </item>
     
     <item>
@@ -35,14 +30,38 @@ blogdown:::install_hugo_bin(&amp;quot;d:/hugo.exe&amp;quot;)  Github新建一个
     </item>
     
     <item>
+      <title>构建blog</title>
+      <link>/blog/%E6%9E%84%E5%BB%BAblog/</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/%E6%9E%84%E5%BB%BAblog/</guid>
+      <description>软件准备  安装R(https://www.r-project.org/)
+ 安装rstudio(https://www.rstudio.com/)
+ 安装git(https://git-scm.com/)
+  Rstudio配置 安装好上述软件后，需要对Rstudio进行简单的配置：
+ Tools -&amp;gt; Global Options -&amp;gt; Sweave -&amp;gt; Weave Rnw files using:knitr
+ Tools -&amp;gt; Global Options -&amp;gt; Sweave -&amp;gt; Typeset LaTex into PDF using:XeLaTeX,这两个是生成PDF文件用的，中文用户最好选择XeLaTeX
+ Tools -&amp;gt; Global Options -&amp;gt; Git/SVN -&amp;gt; Git executable
+  安装blogdown和hugo 安装blogdown： install.packages(&#39;blogdown&#39;)  安装hugo： blogdown::install_hugo()  如果报错，可以直接安装开发版：
+install.packages(&amp;quot;devtools&amp;quot;) devtools::install_github(&amp;quot;rstudio/blogdown&amp;quot;)  如果还是报错，就手动下载安装：
+blogdown:::install_hugo_bin(&amp;quot;d:/hugo.exe&amp;quot;)  Github新建一个仓库 blogdown建站 1.创建项目 回到Rstudio，File -&amp;gt; New Project -&amp;gt; Version Control -&amp;gt; Git，然后填写Repository URL,Project directory name会自动生成，选择一个合适的文件夹存放，点击Create Project创建项目</description>
+    </item>
+    
+    <item>
       <title>Blogdown&#43;Hugo&#43;Github&#43;Netlify构建blog</title>
       <link>/post/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/</link>
       <pubDate>Wed, 17 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/</guid>
-      <description>软件准备  安装R(https://www.r-project.org/) 安装rstudio(https://www.rstudio.com/) 安装git(https://git-scm.com/)  Rstudio配置 安装好上述软件后，需要对Rstudio进行简单的配置：
- Tools -&amp;gt; Global Options -&amp;gt; Sweave -&amp;gt; Weave Rnw files using:knitr Tools -&amp;gt; Global Options -&amp;gt; Sweave -&amp;gt; Typeset LaTex into PDF using:XeLaTeX,  这两个是生成PDF文件用的，中文用户最好选择XeLaTeX
- Tools -&amp;gt; Global Options -&amp;gt; Git/SVN -&amp;gt; Git executable  安装blogdown和hugo 安装blogdown： ## 安装hugo： ```blogdown::install_hugo()``` 如果报错，可以直接安装开发版： ```install.packages(&amp;quot;devtools&amp;quot;) devtools::install_github(&amp;quot;rstudio/blogdown&amp;quot;)``` 如果还是报错，就手动下载安装： ```blogdown:::install_hugo_bin(&amp;quot;d:/hugo.exe&amp;quot;)``` # Github新建一个仓库 &amp;lt;img src=&amp;quot;/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/2.PNG&amp;quot; alt=&amp;quot;&amp;quot; width=&amp;quot;400px&amp;quot; height=&amp;quot;300px&amp;quot;/&amp;gt; # blogdown建站 ## 1.创建项目 回到Rstudio，```File -&amp;gt; New Project -&amp;gt; Version Control -&amp;gt; Git```，然后填写```Repository URL```,```Project directory name```会自动生成，选择一个合适的文件夹存放，点击```Create Project```创建项目 ### 设置gitignore 打Rstudio右下角的```Files```标签，点击```.</description>
+      <description>软件准备  安装R(https://www.r-project.org/)
+ 安装rstudio(https://www.rstudio.com/)
+ 安装git(https://git-scm.com/)
+  Rstudio配置 安装好上述软件后，需要对Rstudio进行简单的配置：
+ Tools -&amp;gt; Global Options -&amp;gt; Sweave -&amp;gt; Weave Rnw files using:knitr
+ Tools -&amp;gt; Global Options -&amp;gt; Sweave -&amp;gt; Typeset LaTex into PDF using:XeLaTeX,
+  这两个是生成PDF文件用的，中文用户最好选择XeLaTeX
+ Tools -&amp;gt; Global Options -&amp;gt; Git/SVN -&amp;gt; Git executable
+  安装blogdown和hugo 安装blogdown： ## 安装hugo： ```blogdown::install_hugo()``` 如果报错，可以直接安装开发版： ```install.packages(&amp;quot;devtools&amp;quot;) devtools::install_github(&amp;quot;rstudio/blogdown&amp;quot;)``` 如果还是报错，就手动下载安装： ```blogdown:::install_hugo_bin(&amp;quot;d:/hugo.exe&amp;quot;)``` # Github新建一个仓库 &amp;lt;img src=&amp;quot;/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/2.PNG&amp;quot; alt=&amp;quot;&amp;quot; width=&amp;quot;400px&amp;quot; height=&amp;quot;300px&amp;quot;/&amp;gt; # blogdown建站 ## 1.</description>
     </item>
     
     <item>
@@ -195,7 +214,8 @@ blogdown:::install_hugo_bin(&amp;quot;d:/hugo.exe&amp;quot;)  Github新建一个
       <pubDate>Tue, 05 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>/blog/%E8%87%AA%E5%B7%B1%E9%AA%97%E8%87%AA%E5%B7%B1/</guid>
-      <description>想着等导师的事情彻底定下来就好好和自己聊一聊 也不知道是什么时候养成的这个习惯 每次重大事件结束就想总结总结 可也是一天拖一天的拖到了现在 不过也不算吧 毕竟之前老板请实验室吃饭也只是口头很含糊的说了一句 明天才正式的交纸质协议呢
+      <description>想着等导师的事情彻底定下来就好好和自己聊一聊 也不知道是什么时候养成的这个习惯
+每次重大事件结束就想总结总结 可也是一天拖一天的拖到了现在 不过也不算吧 毕竟之前老板请实验室吃饭也只是口头很含糊的说了一句 明天才正式的交纸质协议呢
 自从上次的毕设组会汇报到暑假在家待得诚惶诚恐的 来学校之后 又每天大喜大悲的 一下子觉得应该是么问题的 一下子又觉得有很大的可能留不下来 能兴奋到上天又可以难过的要死 那个时间段觉得要是能定下来 其他的都不算事 不过 磨着磨着 也觉得也不是多大的事 慢慢也就么有那么放在心上了 从去年9月底到今天经历了这么长时间 终是定下来了
 以后好好地努力
 真的是有的人完全么有花费太大的努力就轻而易举的得到我需要花费很大的力气才能得到的 很无奈啊 可也只是无奈而已
@@ -328,8 +348,11 @@ blogdown:::install_hugo_bin(&amp;quot;d:/hugo.exe&amp;quot;)  Github新建一个
       <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
       
       <guid>/blog/%E6%9C%AA%E7%9F%A5%E6%83%B6%E6%80%96-%E6%B1%82%E8%80%8C%E4%B8%8D%E5%BE%97/</guid>
-      <description>及其不愿意的离开家 估计是在家待的太久了 整个人变得十分念家 还有出其不意的意外 离开时便控制不住眼泪 最后努力的笑 因为想让阿爸阿妈放心 总是要离开 只是早晚的问题而已 我就劝自己说 不可能一直赖着他们 总要自己出去闯 果然安逸的生活会让人畏手畏脚的 可也真的是想有人陪着 难过开心都是想有人可以抱着 所以说习惯一个人必定有着很难过的日子的 人是群居动物 和周围的人和环境相处的开心 才会感觉到满满当当的幸福 我问阿妈说为什么我问我弟要了一个寒假的平板他不肯给我 回学校后突然特别大方的给我 阿妈说是因为他给自己买了个新手机啊 可我现在觉得离开家以后都会格外思念家人 即使我和他吵得冷战了十来天 火车上死癟子对我好的时候还是特别难过 觉得这世上不求回报对我好的人也就家里人了吧 自己作死删掉了QQ和微信 还是很后悔当时生气做的决定 幸亏只是把电话号码拉黑了一段时间 以后生气的时候不可做任何事哈 要好好珍惜啊 现在老是会想很久很久以后爸妈不在也就他一个至亲的人了 我们一定要相互爱护啊 以后吵架的话就来看看 可能是一直担心不知道会怎样的以后 没有很想你 会不会以后一直这样 到时候会不会没有勇气和你表白呢 无聊了就开始想象要怎么样给你说呢 现在只想到在你生日那天买那种心型的德芙 DOVE呢 对于环境的变化总是会很惶恐 人际交往方面真的是很欠缺 性子使然很难改啊 不过等熟悉了就好了 这段时间过去就好了 尽自己最大的努力 然后听天命 以后总得面对的不是 不能因为害怕就不去做 何必担心那么多 做就好了哈
-或许是到了这个年龄 总想有个家 可以随时回去的家 就不用四处游荡 就算是荡也有归处 不会心无定所整日惶惶恐恐 真的是思春了啊 我很容易移情的 你到现在还没有回我的消息 我想了很多种借口 可是敌不过你并不喜欢我 真的是得不到的辗转反侧 日日挠心挖肺 难受的很呢 这样好几个月不见 会不会就没那么深的执念 会不会就放过自己 火车快熄灯了 没有特别特别的想你 想要在接下来的日子变得好看 然后可以很好看的站你旁边毕业呢 晚安 2017.</description>
+      <description>及其不愿意的离开家 估计是在家待的太久了 整个人变得十分念家 还有出其不意的意外 离开时便控制不住眼泪 最后努力的笑 因为想让阿爸阿妈放心 总是要离开 只是早晚的问题而已 我就劝自己说 不可能一直赖着他们 总要自己出去闯 果然安逸的生活会让人畏手畏脚的 可也真的是想有人陪着 难过开心都是想有人可以抱着 所以说习惯一个人必定有着很难过的日子的 人是群居动物 和周围的人和环境相处的开心 才会感觉到满满当当的幸福 我问阿妈说为什么我问我弟要了一个寒假的平板他不肯给我 回学校后突然特别大方的给我 阿妈说是因为他给自己买了个新手机啊 可我现在觉得离开家以后都会格外思念家人 即使我和他吵得冷战了十来天 火车上死癟子对我好的时候还是特别难过 觉得这世上不求回报对我好的人也就家里人了吧 自己作死删掉了QQ和微信 还是很后悔当时生气做的决定 幸亏只是把电话号码拉黑了一段时间 以后生气的时候不可做任何事哈 要好好珍惜啊 现在老是会想很久很久以后爸妈不在也就他一个至亲的人了 我们一定要相互爱护啊 以后吵架的话就来看看
+可能是一直担心不知道会怎样的以后 没有很想你 会不会以后一直这样 到时候会不会没有勇气和你表白呢 无聊了就开始想象要怎么样给你说呢 现在只想到在你生日那天买那种心型的德芙 DOVE呢
+对于环境的变化总是会很惶恐 人际交往方面真的是很欠缺 性子使然很难改啊 不过等熟悉了就好了 这段时间过去就好了 尽自己最大的努力 然后听天命 以后总得面对的不是 不能因为害怕就不去做 何必担心那么多 做就好了哈
+或许是到了这个年龄 总想有个家 可以随时回去的家 就不用四处游荡 就算是荡也有归处 不会心无定所整日惶惶恐恐 真的是思春了啊 我很容易移情的 你到现在还没有回我的消息 我想了很多种借口 可是敌不过你并不喜欢我 真的是得不到的辗转反侧 日日挠心挖肺 难受的很呢 这样好几个月不见 会不会就没那么深的执念 会不会就放过自己
+火车快熄灯了 没有特别特别的想你 想要在接下来的日子变得好看 然后可以很好看的站你旁边毕业呢 晚安</description>
     </item>
     
     <item>
@@ -339,7 +362,8 @@ blogdown:::install_hugo_bin(&amp;quot;d:/hugo.exe&amp;quot;)  Github新建一个
       
       <guid>/blog/%E7%A2%8E%E7%A2%8E%E5%BF%B5/</guid>
       <description>估计是前天晚上折腾到4点 昨天晚上睡得挺好的十点上床一点多醒来了一次 一会又睡着了 四点多又醒来 也听着耳机 比起硬座还是舒服太多 走之前一直想再见你一次 不过没成真--坐着高铁突然就特别特别想你 想着要不直接问你有没有 然后什么都不管直接告诉你 还想着要不给你发悄悄话得了 一定要告诉你 可是不可以呢 你要做个好女孩^^如果到时候真真是最后可以允许你的 现在是把见你的每一面都当做最后一面来见 要不干脆直接告诉你好了 管那么多干嘛 想太多 怕到时候连同学都做不成
-报了夏令营 三分之一 还是太高估自己 有点忘乎所以 完全没有考虑淘汰 也是傻的可以 现在也没办法 就开学再fighting 2016.7.21.07:58</description>
+报了夏令营 三分之一 还是太高估自己 有点忘乎所以 完全没有考虑淘汰 也是傻的可以 现在也没办法 就开学再fighting
+2016.7.21.07:58</description>
     </item>
     
     <item>
@@ -376,7 +400,8 @@ blogdown:::install_hugo_bin(&amp;quot;d:/hugo.exe&amp;quot;)  Github新建一个
       
       <guid>/blog/%E7%9D%A1%E8%A7%89%E7%9A%84%E4%BA%8B/</guid>
       <description>这一段时间，过得不好，睡觉变成了一件很痛苦的事情，不过幸好的是过来了，考试以细胞收了尾，每一天说的最多的一句话就是“什么时候考完试就好了”，想啊想啊，真的到那个时候却也没有想象中的那种雀跃，睡在地上的日子也只有两次，六月初到现在，不短也不长的日子，很难过，却也快要结束了，时间真的是，让你开心的难过的，都不会停留在你身边太久，自顾自的向前，从不会不舍的回头。所以，学会了难过的日子里，平静的一点一点接受。
-&amp;lt;img src=&amp;quot;/blog/2015-07-16-睡觉的事_files/睡觉.jpg&amp;quot; alt=&amp;quot;&amp;quot; width=&amp;quot;400px&amp;quot; height=&amp;quot;200px&amp;quot;/&amp;gt; 因为睡觉，觉得都没有注意力给你了，只是间歇些的，依旧是觉得自己很不好，一切都是最初的模样，除了摇摆不定。明明昨晚想说的很多，现在一时之间却没有什么想说的了。实习其实也不轻松，待在实验室一天，大部分时间都在等待，不过，比起考试还是更倾向于实习，一直以来都是不喜欢考试，从小到大。  第一次一个人回家，路上要照顾好自己。见不到了。以后都是吧。其实还是不习惯的。 晚安。</description>
+&amp;lt;img src=&amp;quot;/blog/2015-07-16-睡觉的事_files/睡觉.jpg&amp;quot; alt=&amp;quot;&amp;quot; width=&amp;quot;400px&amp;quot; height=&amp;quot;200px&amp;quot;/&amp;gt; 因为睡觉，觉得都没有注意力给你了，只是间歇些的，依旧是觉得自己很不好，一切都是最初的模样，除了摇摆不定。明明昨晚想说的很多，现在一时之间却没有什么想说的了。实习其实也不轻松，待在实验室一天，大部分时间都在等待，不过，比起考试还是更倾向于实习，一直以来都是不喜欢考试，从小到大。  第一次一个人回家，路上要照顾好自己。见不到了。以后都是吧。其实还是不习惯的。
+晚安。</description>
     </item>
     
     <item>
@@ -435,7 +460,8 @@ blogdown:::install_hugo_bin(&amp;quot;d:/hugo.exe&amp;quot;)  Github新建一个
       <pubDate>Wed, 15 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>/blog/%E5%85%B3%E4%BA%8E%E5%B0%8F%E7%8E%8B%E5%AD%90/</guid>
-      <description>一个短短的世界最伤心的故事。我听到狐狸对小王子说，我对麦田无动于衷，可是因你金色的头发，我甚至会喜欢那风吹麦浪的声音。可是。小王子对主动俯身索爱的狐狸心存疑虑，却对一朵遥远而矫作的玫瑰念念于心。在想，如果小王子和狐狸从未彼此驯养，如果只是陌生人，会不会谁都不那么伤心。可在注定的时间，相遇也是注定。所以，小王子要好好的继续向前走，会有人陪你看日落，一天四十三次。 2014.4.16 17:06</description>
+      <description>一个短短的世界最伤心的故事。我听到狐狸对小王子说，我对麦田无动于衷，可是因你金色的头发，我甚至会喜欢那风吹麦浪的声音。可是。小王子对主动俯身索爱的狐狸心存疑虑，却对一朵遥远而矫作的玫瑰念念于心。在想，如果小王子和狐狸从未彼此驯养，如果只是陌生人，会不会谁都不那么伤心。可在注定的时间，相遇也是注定。所以，小王子要好好的继续向前走，会有人陪你看日落，一天四十三次。
+2014.4.16 17:06</description>
     </item>
     
     <item>
@@ -505,7 +531,8 @@ blogdown:::install_hugo_bin(&amp;quot;d:/hugo.exe&amp;quot;)  Github新建一个
       <pubDate>Wed, 11 Jun 2014 00:00:00 +0000</pubDate>
       
       <guid>/blog/mj/</guid>
-      <description>不敢光明正大的转头看，偷偷的斜视，也很是欢喜的。可以和你距离很近，开始喜欢这个时间。没感觉到你靠过来，胳膊上有了一股呼吸，转头看到你，那一瞬间很是诧异，然后竟然感到脸红。未曾想过自己也这么小女生。 我想我是爱你的。。不会再对很好看的男生有想法，觉得有你就好了。安。 2014.6.11 17:06</description>
+      <description>不敢光明正大的转头看，偷偷的斜视，也很是欢喜的。可以和你距离很近，开始喜欢这个时间。没感觉到你靠过来，胳膊上有了一股呼吸，转头看到你，那一瞬间很是诧异，然后竟然感到脸红。未曾想过自己也这么小女生。 我想我是爱你的。。不会再对很好看的男生有想法，觉得有你就好了。安。
+2014.6.11 17:06</description>
     </item>
     
   </channel>
