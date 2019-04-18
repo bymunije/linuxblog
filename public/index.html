@@ -238,11 +238,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="./post/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/">Blogdown&#43;Hugo&#43;Github&#43;Netlify构建blog</a></h3>
+                                <h3><a href="./post/">Post</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2019-04-17'>
-                                    April 17, 2019</time>
+                                    '2019-04-18'>
+                                    April 18, 2019</time>
                             </header>
                             
 
@@ -250,7 +250,19 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="./post/">Post</a></h3>
+                                <h3><a href="./post/try/">try</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-04-18'>
+                                    April 18, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="./post/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/">Blogdown&#43;Hugo&#43;Github&#43;Netlify构建blog</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2019-04-17'>
@@ -291,18 +303,6 @@
                                 <time class="published" datetime=
                                     '2018-12-02'>
                                     December 2, 2018</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="./blog/moments-we-shared/">Moments We Shared</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2018-11-18'>
-                                    November 18, 2018</time>
                             </header>
                             
 
@@ -370,43 +370,49 @@
 
 <ul>
 <li><code>Tools -&gt; Global Options -&gt; Sweave -&gt; Weave Rnw files using:knitr</code></li>
-<li><code>Tools -&gt; Global Options -&gt; Sweave -&gt; Typeset LaTex into PDF using:XeLaTeX</code>,</li>
-</ul>
 
-<p>这两个是生成PDF文件用的，中文用户最好选择XeLaTeX</p>
+<li><p><code>Tools -&gt; Global Options -&gt; Sweave -&gt; Typeset LaTex into PDF using:XeLaTeX</code>,这两个是生成PDF文件用的，中文用户最好选择XeLaTeX</p></li>
 
-<ul>
-<li><code>Tools -&gt; Global Options -&gt; Git/SVN -&gt; Git executable</code></li>
+<li><p><code>Tools -&gt; Global Options -&gt; Git/SVN -&gt; Git executable</code></p></li>
 </ul>
 
 <h1 id="安装blogdown和hugo">安装blogdown和hugo</h1>
 
 <h2 id="安装blogdown">安装blogdown：</h2>
 
-<pre><code class="language-install.packages('blogdown')```">
-## 安装hugo：
+<pre><code>install.packages('blogdown')
+</code></pre>
 
-```blogdown::install_hugo()```
-如果报错，可以直接安装开发版：
-```install.packages(&quot;devtools&quot;) devtools::install_github(&quot;rstudio/blogdown&quot;)```
-   
-如果还是报错，就手动下载安装：
-```blogdown:::install_hugo_bin(&quot;d:/hugo.exe&quot;)```
-a
-# Github新建一个仓库
+<h2 id="安装hugo">安装hugo：</h2>
 
-&lt;img src=&quot;/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/2.PNG&quot; alt=&quot;&quot; width=&quot;400px&quot; height=&quot;300px&quot;/&gt;
+<pre><code>blogdown::install_hugo()
+</code></pre>
 
-# blogdown建站
+<p>如果报错，可以直接安装开发版：</p>
 
-## 1.创建项目
+<pre><code>install.packages(&quot;devtools&quot;) devtools::install_github(&quot;rstudio/blogdown&quot;)
+</code></pre>
 
-回到Rstudio，`File -&gt; New Project -&gt; Version Control -&gt; Git`，然后填写`Repository URL`,`Project directory name`会自动生成，选择一个合适的文件夹存放，点击`Create Project`创建项目
+<p>如果还是报错，就手动下载安装：</p>
 
-### 设置gitignore
+<pre><code>blogdown:::install_hugo_bin(&quot;d:/hugo.exe&quot;)
+</code></pre>
 
-打Rstudio右下角的`Files`标签，点击`.gitignore`文件，因为有些文件不需要啊上传到github, 比如public，是hugo渲染后的网页， 本地预览即可，因为在Netlify部署的时候会重新渲染
-```.Rproj.user
+<h1 id="github新建一个仓库">Github新建一个仓库</h1>
+
+<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/2.PNG" alt="" width="400px" height="300px"/></p>
+
+<h1 id="blogdown建站">blogdown建站</h1>
+
+<h2 id="1-创建项目">1.创建项目</h2>
+
+<p>回到Rstudio，<code>File -&gt; New Project -&gt; Version Control -&gt; Git</code>，然后填写<code>Repository URL</code>,<code>Project directory name</code>会自动生成，选择一个合适的文件夹存放，点击<code>Create Project</code>创建项目</p>
+
+<h3 id="设置gitignore">设置gitignore</h3>
+
+<p>打Rstudio右下角的<code>Files</code>标签，点击<code>.gitignore</code>文件，因为有些文件不需要啊上传到github, 比如public，是hugo渲染后的网页， 本地预览即可，因为在Netlify部署的时候会重新渲染</p>
+
+<pre><code>.Rproj.user
 .Rhistory
 .RData
 .Ruserdata
@@ -718,11 +724,11 @@ git config --global user.email &quot;youremail@domain.com&quot;
           <article class="mini-post">
             <header>
               <h3>
-                <a href="./post/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/">Blogdown&#43;Hugo&#43;Github&#43;Netlify构建blog</a>
+                <a href="./post/">Post</a>
               </h3>
               
-              <time class="published" datetime='2019-04-17'>
-                April 17, 2019
+              <time class="published" datetime='2019-04-18'>
+                April 18, 2019
               </time>
             </header>
             
@@ -732,7 +738,21 @@ git config --global user.email &quot;youremail@domain.com&quot;
           <article class="mini-post">
             <header>
               <h3>
-                <a href="./post/">Post</a>
+                <a href="./post/try/">try</a>
+              </h3>
+              
+              <time class="published" datetime='2019-04-18'>
+                April 18, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="./post/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/">Blogdown&#43;Hugo&#43;Github&#43;Netlify构建blog</a>
               </h3>
               
               <time class="published" datetime='2019-04-17'>
@@ -779,20 +799,6 @@ git config --global user.email &quot;youremail@domain.com&quot;
               
               <time class="published" datetime='2018-12-02'>
                 December 2, 2018
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="./blog/moments-we-shared/">Moments We Shared</a>
-              </h3>
-              
-              <time class="published" datetime='2018-11-18'>
-                November 18, 2018
               </time>
             </header>
             

@@ -25,28 +25,35 @@ type: post
 
 安装好上述软件后，需要对Rstudio进行简单的配置：
 
-- ```Tools -> Global Options -> Sweave -> Weave Rnw files using:knitr```
-- ```Tools -> Global Options -> Sweave -> Typeset LaTex into PDF using:XeLaTeX```,
+-  ` Tools -> Global Options -> Sweave -> Weave Rnw files using:knitr`
+-  `Tools -> Global Options -> Sweave -> Typeset LaTex into PDF using:XeLaTeX`,这两个是生成PDF文件用的，中文用户最好选择XeLaTeX
 
-这两个是生成PDF文件用的，中文用户最好选择XeLaTeX
-
-- ```Tools -> Global Options -> Git/SVN -> Git executable```
+- `Tools -> Global Options -> Git/SVN -> Git executable`
 
 # 安装blogdown和hugo
 
 ## 安装blogdown：
 
-```install.packages('blogdown')```
+```
+install.packages('blogdown')
+```
 
 ## 安装hugo：
 
-```blogdown::install_hugo()```
+```
+blogdown::install_hugo()
+```
+
 如果报错，可以直接安装开发版：
-```install.packages("devtools") devtools::install_github("rstudio/blogdown")```
+```
+install.packages("devtools") devtools::install_github("rstudio/blogdown")
+```
    
 如果还是报错，就手动下载安装：
-```blogdown:::install_hugo_bin("d:/hugo.exe")```
-a
+```
+blogdown:::install_hugo_bin("d:/hugo.exe")
+```
+
 # Github新建一个仓库
 
 <img src="/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/2.PNG" alt="" width="400px" height="300px"/>
@@ -60,7 +67,8 @@ a
 ### 设置gitignore
 
 打Rstudio右下角的`Files`标签，点击`.gitignore`文件，因为有些文件不需要啊上传到github, 比如public，是hugo渲染后的网页， 本地预览即可，因为在Netlify部署的时候会重新渲染
-```.Rproj.user
+```
+.Rproj.user
 .Rhistory
 .RData
 .Ruserdata
