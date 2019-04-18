@@ -1,5 +1,7 @@
 baseurl = "https://dbzhang.netlify.com/"
-languageCode = "en-us"
+languageCode = "zh-cn"
+hasCJKLanguage = true
+enableEmoji = true
 title = "Bymunije"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
@@ -11,6 +13,10 @@ pluralizeListTitles = false
 enableRobotsTXT = true
 canonifyURLs = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+[Author] # Used in authorbox
+    name = "Bymunije"
+    avatar = "img/main/Wallions278789.jpg"
 
 [taxonomies]
   tag = "tags"

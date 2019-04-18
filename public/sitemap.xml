@@ -27,12 +27,6 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/r/</loc>
     <lastmod>2019-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -51,23 +45,8 @@
   </url>
   
   <url>
-    <loc>/post/hfskfjhkjfkjfkjghdkgdghdghjhgfgkjjgjgkfgjdjkgdjfgkjfgjdfgkgs/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/try/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/%E6%9E%84%E5%BB%BAblog/</loc>
     <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/blogdown-hugo-github-netlify%E6%9E%84%E5%BB%BAblog/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -85,6 +64,12 @@
   <url>
     <loc>/blog/%E7%A6%BB%E5%BC%80%E6%98%AF%E4%B8%BA%E4%BA%86%E6%9B%B4%E5%A5%BD%E7%9A%84%E5%9B%9E%E6%9D%A5/</loc>
     <lastmod>2019-02-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-01-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
