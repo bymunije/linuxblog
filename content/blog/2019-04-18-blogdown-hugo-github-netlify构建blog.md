@@ -1,8 +1,8 @@
 ---
-title: Blogdown+Hugo+Github+Netlify构建blog
+title: 构建blog
 author: bymunije
 date: '2019-04-18'
-slug: blogdown-hugo-github-netlify构建blog
+slug: 构建blog
 categories:
   - Study
 tags:
