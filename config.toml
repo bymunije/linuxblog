@@ -14,10 +14,6 @@ enableRobotsTXT = true
 canonifyURLs = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
-[Author] # Used in authorbox
-    name = "Bymunije"
-    avatar = "img/main/Wallions278789.jpg"
-
 [taxonomies]
   tag = "tags"
   series = "series"
@@ -30,6 +26,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   extensions = ["hardLineBreak"]
   
 [params]
+  [params.logo]
+    url = "favicon.ico"
+    width = 16
+    height = 16
+    alt = "Logo"
   disqus               = "bymunije"
   # Sets the meta tag description
   description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
