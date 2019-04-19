@@ -1,5 +1,5 @@
 baseurl = "https://bymunije.netlify.com/"
-languageCode = "zh-cn"
+languageCode = "en-us"
 hasCJKLanguage = true
 enableEmoji = true
 title = "Bymunije"
@@ -214,3 +214,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   # researchgate     = "example"
   # Email
   email            = "bymunije@gmail.com"
+  
+# 使用 filename.html 的方式，这样才能保证文档内图片相对路径的正确
+uglyURLs=true
