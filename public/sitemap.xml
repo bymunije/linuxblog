@@ -4,42 +4,64 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+    <loc>/tags/linux/</loc>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/blog/server-tips/</loc>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/shell/</loc>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/study/</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/blog/shell-tips/</loc>
+    <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
     <lastmod>2019-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -67,13 +89,7 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-01-26T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/%E6%B2%A1%E6%9C%89%E5%B9%B4%E5%91%B3%E7%9A%84%E6%9C%AC%E5%91%BD%E5%B9%B4/</loc>
+    <loc>/blog/%E6%B2%A1%E6%9C%89%E5%B9%B4%E5%91%B3%E7%9A%84%E6%9C%AC%E5%91%BD%E5%B9%B4/</loc>
     <lastmod>2019-01-26T00:00:00+00:00</lastmod>
   </url>
   

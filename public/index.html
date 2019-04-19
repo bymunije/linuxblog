@@ -21,8 +21,8 @@
         "accountablePerson" : "img\/main\/Wallions278789.jpgBymunije",
         "copyrightHolder" : "img\/main\/Wallions278789.jpgBymunije",
         "copyrightYear" : "2019",
-        "datePublished": "2019-04-18 00:00:00 \x2b0000 UTC",
-        "dateModified" : "2019-04-18 00:00:00 \x2b0000 UTC",
+        "datePublished": "2019-04-19 00:00:00 \x2b0000 UTC",
+        "dateModified" : "2019-04-19 00:00:00 \x2b0000 UTC",
         "url" : "\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -56,7 +56,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/" />
 
-<meta property="og:updated_time" content="2019-04-18T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2019-04-19T00:00:00&#43;00:00"/>
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
@@ -226,6 +226,30 @@
                 
                         <article class="mini-post">
                             <header>
+                                <h3><a href="./blog/server-tips/">Server Tips</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-04-19'>
+                                    April 19, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="./blog/shell-tips/">shell tips</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-04-19'>
+                                    April 19, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
                                 <h3><a href="./blog/%E6%9E%84%E5%BB%BAblog/">构建blog</a></h3>
                                 
                                 <time class="published" datetime=
@@ -250,19 +274,7 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="./post/">Post</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2019-01-26'>
-                                    January 26, 2019</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="./post/%E6%B2%A1%E6%9C%89%E5%B9%B4%E5%91%B3%E7%9A%84%E6%9C%AC%E5%91%BD%E5%B9%B4/">没有年味的本命年</a></h3>
+                                <h3><a href="./blog/%E6%B2%A1%E6%9C%89%E5%B9%B4%E5%91%B3%E7%9A%84%E6%9C%AC%E5%91%BD%E5%B9%B4/">没有年味的本命年</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2019-01-26'>
@@ -296,18 +308,6 @@
 
                         </article>
                 
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="./blog/%E7%94%9F%E6%97%A5%E9%81%87%E4%B8%8A%E7%BB%84%E4%BC%9A/">生日遇上组会</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2018-09-12'>
-                                    September 12, 2018</time>
-                            </header>
-                            
-
-                        </article>
-                
 
                 
                     <a href=
@@ -330,7 +330,7 @@
   <header>
     <div class="title">
         
-            <h2><a href="./blog/%E6%9E%84%E5%BB%BAblog/">构建blog</a></h2>
+            <h2><a href="./blog/server-tips/">Server Tips</a></h2>
         
         
     </div>
@@ -338,11 +338,11 @@
         
 
         <time class="published"
-            datetime='2019-04-18'>
-            April 18, 2019</time>
-        <span class="author">bymunije</span>
+            datetime='2019-04-19'>
+            April 19, 2019</time>
+        <span class="author">Bymunije</span>
         
-            <p>4 minute read</p>
+            <p>2 minute read</p>
         
         
     </div>
@@ -356,209 +356,162 @@
   <div id="content">
     
 
-<h1 id="软件准备">软件准备</h1>
+<h1 id="font-color-orange-size-6-server-font"><font color=orange size=6>Server</font></h1>
+
+<h2 id="1-linux下python虚拟环境-可自己装package">1.Linux下python虚拟环境 &ndash;&gt; 可自己装package</h2>
 
 <ul>
-<li>安装R(<a href="https://www.r-project.org/">https://www.r-project.org/</a>)<br /></li>
-<li>安装rstudio(<a href="https://www.rstudio.com/">https://www.rstudio.com/</a>)<br /></li>
-<li>安装git(<a href="https://git-scm.com/">https://git-scm.com/</a>)<br />
+<li>创建环境：<code>conda create -p /home/byzhang/conda/envs/bymunije</code><br /></li>
+<li>激活环境：<code>source activate bymunije</code><br /></li>
+<li>退出环境：<code>source deactivate bymunije</code><br />
 <br /></li>
 </ul>
 
-<h1 id="rstudio配置">Rstudio配置</h1>
+<h2 id="2-jupyter">2.Jupyter</h2>
 
-<p>安装好上述软件后，需要对Rstudio进行简单的配置：</p>
+<h3 id="1-使用">(1).使用</h3>
+
+<pre><code>jupyter notebook --port='20021' --ip='0.0.0.0
+</code></pre>
 
 <ul>
-<li><code>Tools -&gt; Global Options -&gt; Sweave -&gt; Weave Rnw files using:knitr</code><br /></li>
-
-<li><p><code>Tools -&gt; Global Options -&gt; Sweave -&gt; Typeset LaTex into PDF using:XeLaTeX</code>,这两个是生成PDF文件用的，中文用户最好选择XeLaTeX</p></li>
-
-<li><p><code>Tools -&gt; Global Options -&gt; Git/SVN -&gt; Git executable</code></p></li>
-</ul>
-
-<h1 id="安装blogdown和hugo">安装blogdown和hugo</h1>
-
-<h2 id="安装blogdown">安装blogdown：</h2>
-
-<pre><code>install.packages('blogdown')
-</code></pre>
-
-<h2 id="安装hugo">安装hugo：</h2>
-
-<pre><code>blogdown::install_hugo()
-</code></pre>
-
-<p>如果报错，可以直接安装开发版：</p>
-
-<pre><code>install.packages(&quot;devtools&quot;) devtools::install_github(&quot;rstudio/blogdown&quot;)
-</code></pre>
-
-<p>如果还是报错，就手动下载安装：</p>
-
-<pre><code>blogdown:::install_hugo_bin(&quot;d:/hugo.exe&quot;)
-</code></pre>
-
-<h1 id="github新建一个仓库">Github新建一个仓库</h1>
-
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/2.PNG" alt="" width="400px" height="300px"/></p>
-
-<h1 id="blogdown建站">blogdown建站</h1>
-
-<h2 id="1-创建项目">1.创建项目</h2>
-
-<p>回到Rstudio，<code>File -&gt; New Project -&gt; Version Control -&gt; Git</code>，然后填写<code>Repository URL</code>,<code>Project directory name</code>会自动生成，选择一个合适的文件夹存放，点击<code>Create Project</code>创建项目</p>
-
-<h3 id="设置gitignore">设置gitignore</h3>
-
-<p>打Rstudio右下角的<code>Files</code>标签，点击<code>.gitignore</code>文件，因为有些文件不需要啊上传到github, 比如public，是hugo渲染后的网页， 本地预览即可，因为在Netlify部署的时候会重新渲染</p>
-
-<pre><code>.Rproj.user
-.Rhistory
-.RData
-.Ruserdata
-blogdown
-.DS_Store
-public/ 
-</code></pre>
-
-<h2 id="2-初始化blogdown">2.初始化blogdown</h2>
-
-<p>打开<code>Rstudio,File -&gt; New Project -&gt; New Directory -&gt; Website using blogdown</code>，因为已经安装了hugo，所以去掉hugo选项,主题可以修改，点击<code>Create Project</code>创建项目</p>
-
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/1.png" alt="" width="400px" height="300px"/></p>
-
-<h2 id="3-本地项目同步到github仓库">3.本地项目同步到github仓库</h2>
-
-<pre><code>cd &lt;本地项目目录&gt;
-git init
-git add .
-git commit -m &quot;first comment&quot;
-git remote add origin https://github.com/&lt;github帐号&gt;/&lt;仓库名称&gt;
-git remote -v
-git pull origin master --allow-unrelated-histories
-git push -u origin master
-</code></pre>
-
-<h2 id="4-本地运行网站">4.本地运行网站</h2>
-
-<p>点击Rstudio菜单<code>Help</code>下面的<code>Addins-&gt;Serve Site</code>，可能会提示安装几个包例如shiny、miniUI等，点击yes安装ok,，其实点击这个跟在console里面输入<code>blogdown::serve_site()</code>是一样的：</p>
-
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/3.png" alt="" width="400px" height="300px"/></p>
-
-<h1 id="设置netlify">设置Netlify</h1>
-
-<h2 id="1-注册netlify">1.注册Netlify</h2>
-
-<p>打开Netlify(<a href="https://app.netlify.com/signup">https://app.netlify.com/signup</a>)      主页,直接在 <code>Sign up with one of the following</code>下面选择GitHub</p>
-
-<h2 id="2-绑定github">2.绑定Github</h2>
-
-<p>登录Netlify后，点击导航栏<code>Sites</code>，再点击右上角<code>New site from Git</code>，再点击Github进行下列操作：</p>
-
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/4.png" alt="" width="400px" height="300px"/></p>
-
-<p>点击<code>deploy site</code>生成网站</p>
-
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/5.png" alt="" width="400px" height="300px"/></p>
-
-<h1 id="更新博客内容">更新博客内容</h1>
-
-<p>打开Rstudio，<code>Rstudio,File -&gt; New Project -&gt; exist Directory -&gt; blogdown dictionary</code>，点击右上角Git标签，点击commit，选择更新内容，填写<code>commit message</code>点击<code>commit -&gt; push</code></p>
-
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/7.jpeg" alt="" width="400px" height="300px"/></p>
-
-<h1 id="quenstion">Quenstion:</h1>
-
-<h4 id="1-git在github远程创建仓库后-利用gitbash进行提交本地文件的时候出现如下错误">1.git在github远程创建仓库后, 利用gitbash进行提交本地文件的时候出现如下错误：</h4>
-
-<p><img src="./post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/8.png" alt="" width="700px" height="250px"/></p>
-
-<p>解决办法1:</p>
-
-<pre><code>1: 进行push前先将远程仓库pull到本地仓库
-$ git pull origin master    #git pull --rebase origin master
-$ git push -u origin master
-
-2: 强制push本地仓库到远程 (这种情况不会进行merge, 强制push后远程文件可能会丢失 不建议使用此方法)
-$ git push -u origin master -f
-
-3: 避开解决冲突, 将本地文件暂时提交到远程新建的分支中
-$ git branch [name]
-# 创建完branch后, 再进行push
-$ git push -u origin [name] 
-</code></pre>
-
-<p>解决办法2:</p>
-
-<pre><code>git pull --rebase origin master 
-git push -u origin master
-</code></pre>
-
-<p>解决办法3:</p>
-
-<pre><code>git fetch origin master:tmp
-git rebase tmp
-git push origin HEAD:master
-git branch -D tmp
-</code></pre>
-
-<h4 id="2-rstudio-push-每次需要输入用户名和密码">2.Rstudio push 每次需要输入用户名和密码</h4>
-
-<p>解决办法：</p>
-
-<p>1.git bash进入你的项目目录，输入<br />
-<code>git config --global credential.helper store</code>,然后会在本地生成一个文本，记录账号和密码</p>
-
-<p>2.使用上述的命令配置好之后，再操作一次git pull，它会提示你输入账号密码，之后就不需要再次输入密码</p>
-
-<h4 id="3-设置git">3. 设置Git</h4>
-
-<p>(1).设置用户名和email。</p>
-
-<pre><code>git config --global user.name &quot;Your Name&quot;
-git config --global user.email &quot;youremail@domain.com&quot;
-</code></pre>
-
-<p>Home目录下会新建一个.gitconfig文件</p>
-
-<p>(2).GitHub账号添加SSH Keys</p>
-
-<p>以公钥认证方式访问SSH协议的Git服务器时无需输入口令，而且更安全。<br />
-（访问HTTP协议的Git服务器时，比如提交修改，每次都需要输入口令）</p>
-
-<ul>
-<li>创建SSH key<br />
+<li>端口范围：20021-200030<br /></li>
+<li>ip: server IP<br />
 <br /></li>
 </ul>
 
-<p><code>ssh-keygen -t rsa -C &quot;youremail@163.com&quot;</code><br />
-系统会提示key的保存位置（一般是~/.ssh目录）和指定口令，<br />
-保持默认，连续三次回车即可。</p>
+<h3 id="2-设置theme">(2). 设置theme</h3>
+
+<pre><code>jt -t monokai -f fira -fs 13 -cellw 90% -ofs 11 -dfs 11 -T -N 
+</code></pre>
 
 <ul>
-<li>Copy SSH Key<br />
+<li>fira: 字体<br /></li>
+<li>-T： 标题栏<br />
 <br /></li>
 </ul>
 
-<p>用vim打开文件<code>id_rsa.pub</code>文件内的内容，<br />
-粘帖到github帐号管理的添加SSH key界面中<code>vim ~/.ssh/id_rsa.pub</code></p>
+<h3 id="3-更改主题后输出显示不全">(3). 更改主题后输出显示不全</h3>
+
+<p>打开custom.css文件：</p>
+
+<pre><code>div.output_area {
+display: -webkit-box;
+padding: 13px;
+}
+</code></pre>
+
+<h3 id="4-安装nbextensions标签页">(4). 安装Nbextensions标签页</h3>
+
+<p>1.安装nbextensions</p>
+
+<pre><code>pip install jupyter_contrib_nbextensions -i https://pypi.mirrors.ustc.edu.cn/simple
+jupyter contrib nbextension install --user
+</code></pre>
+
+<p>2.安装nbextensions_configurator</p>
+
+<pre><code>pip install --user jupyter_nbextensions_configurator 
+jupyter nbextensions_configurator enable --user
+</code></pre>
+
+<p>3.显示nbextensions</p>
+
+<pre><code>python -m pip install --user jupyter_contrib_nbextensions
+</code></pre>
+
+<h2 id="3-xshell直接登录服务器">3.Xshell直接登录服务器</h2>
+
+<pre><code>ssh byzhang@100.64.166.214 22 
+</code></pre>
+
+<h2 id="4-rstudio-server">4.Rstudio Server</h2>
 
 <ul>
-<li>添加到GitHub<br />
+<li>server_ip:端口<br />
+<code>
+100.64.166.214:20004
+</code><br /></li>
+<li>查看状态<br />
+<code>
+rstudio-server status
+</code><br />
 <br /></li>
 </ul>
 
-<p>登录github-&gt; Accounting settings图标-&gt; SSH key-&gt; Add SSH key-&gt;<br />
-填写SSH key的名称，然后将拷贝的<code>~/.ssh/id_rsa.pub</code><br />
-文件内容粘帖-&gt; add key”按钮添加。</p>
+<hr />
+
+<h1 id="font-color-orange-size-6-cmd-font"><font color=orange size=6>cmd</font></h1>
+
+<h2 id="1-传输文件">1.传输文件</h2>
+
+<pre><code>scp byzhang@100.64.166.214:/home/byzhang/data/cell_line/split_wild_mut/split_mut_wild/split_mut_wild_all.txt C:/Users/zhang/Desktop/试试/
+</code></pre>
 
 <ul>
-<li>测试<br />
+<li>byzhang@100.64.166.214: 服务器<br />
 <br /></li>
 </ul>
 
-<p>ssh -T git@github.com</p>
+<hr />
+
+<h2 id="font-color-orange-size-6-awk-font"><font color=orange size=6>awk</font></h2>
+
+<h3 id="1-summary">1.Summary</h3>
+
+<ul>
+<li>$0：整行<br /></li>
+<li>从1开始计数<br /></li>
+<li>只能有一对单引号<br /></li>
+<li>语句结束加分号(;)<br />
+<br /></li>
+</ul>
+
+<h3 id="2-note">2. Note</h3>
+
+<ul>
+<li>BEGIN:从第一行开始<br /></li>
+<li>FS:输入字段分隔符，默认空格<br /></li>
+<li>OFS:输出字段分隔符，默认空格<br /></li>
+<li>||/&amp;&amp;: 或/与<br />
+<br /></li>
+</ul>
+
+<pre><code>cat file.txt | awk 'BEGIN {FS=&quot;\t&quot;;OFS=&quot;\t&quot;} {if ($20 == &quot;%&quot; || $20 == &quot;%%&quot;) {$23 = $14; print $0} else if ($20 != &quot;%&quot; &amp;&amp; $20 != &quot;%%&quot;) {$23 = $22; print $0}}' &gt; file2.txt
+</code></pre>
+
+<hr />
+
+<h2 id="font-color-orange-size-6-vim-font"><font color=orange size=6>Vim</font></h2>
+
+<h3 id="1-set-list-查看分隔符">1.set list:查看分隔符</h3>
+
+<hr />
+
+<h2 id="font-color-orange-size-6-ps-font"><font color=orange size=6>ps</font></h2>
+
+<h3 id="1-查看用户所有进程">1.查看用户所有进程</h3>
+
+<pre><code>ps -aux | grep byzhang
+</code></pre>
+
+<hr />
+
+<h2 id="font-color-orange-size-6-du-font"><font color=orange size=6>du</font></h2>
+
+<h3 id="1-查看占用磁盘大小">1.查看占用磁盘大小</h3>
+
+<pre><code>du -sh
+</code></pre>
+
+<hr />
+
+<h2 id="font-color-orange-size-6-common-code-font"><font color=orange size=6>Common code</font></h2>
+
+<h3 id="1-查看文件夹下文件数目">1.查看文件夹下文件数目</h3>
+
+<pre><code>  ls -l | grep '^-' | wc -l
+</code></pre>
 
   </div>
 
@@ -586,7 +539,7 @@ git config --global user.email &quot;youremail@domain.com&quot;
                 <i class="fa fa-tags"></i>
                 
                 
-                <li><a class="article-category-link" href="./tags/r">R</a></li>
+                <li><a class="article-category-link" href="./tags/linux">Linux</a></li>
                 
             
         
@@ -624,8 +577,8 @@ git config --global user.email &quot;youremail@domain.com&quot;
 
 <ul class="actions pagination">
     
-        <li><a href="./blog/%E7%A6%BB%E5%BC%80%E6%98%AF%E4%B8%BA%E4%BA%86%E6%9B%B4%E5%A5%BD%E7%9A%84%E5%9B%9E%E6%9D%A5/"
-                class="button big previous">离开是为了更好的回来</a></li>
+        <li><a href="./blog/shell-tips/"
+                class="button big previous">shell tips</a></li>
     
 
     
@@ -665,7 +618,7 @@ git config --global user.email &quot;youremail@domain.com&quot;
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by bymunije&amp;body=%2fblog%2f%25E6%259E%2584%25E5%25BB%25BAblog%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by Bymunije&amp;body=%2fblog%2fserver-tips%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -715,6 +668,34 @@ git config --global user.email &quot;youremail@domain.com&quot;
           <article class="mini-post">
             <header>
               <h3>
+                <a href="./blog/server-tips/">Server Tips</a>
+              </h3>
+              
+              <time class="published" datetime='2019-04-19'>
+                April 19, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="./blog/shell-tips/">shell tips</a>
+              </h3>
+              
+              <time class="published" datetime='2019-04-19'>
+                April 19, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
                 <a href="./blog/%E6%9E%84%E5%BB%BAblog/">构建blog</a>
               </h3>
               
@@ -743,21 +724,7 @@ git config --global user.email &quot;youremail@domain.com&quot;
           <article class="mini-post">
             <header>
               <h3>
-                <a href="./post/">Post</a>
-              </h3>
-              
-              <time class="published" datetime='2019-01-26'>
-                January 26, 2019
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="./post/%E6%B2%A1%E6%9C%89%E5%B9%B4%E5%91%B3%E7%9A%84%E6%9C%AC%E5%91%BD%E5%B9%B4/">没有年味的本命年</a>
+                <a href="./blog/%E6%B2%A1%E6%9C%89%E5%B9%B4%E5%91%B3%E7%9A%84%E6%9C%AC%E5%91%BD%E5%B9%B4/">没有年味的本命年</a>
               </h3>
               
               <time class="published" datetime='2019-01-26'>
@@ -790,20 +757,6 @@ git config --global user.email &quot;youremail@domain.com&quot;
               
               <time class="published" datetime='2018-11-18'>
                 November 18, 2018
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="./blog/%E7%94%9F%E6%97%A5%E9%81%87%E4%B8%8A%E7%BB%84%E4%BC%9A/">生日遇上组会</a>
-              </h3>
-              
-              <time class="published" datetime='2018-09-12'>
-                September 12, 2018
               </time>
             </header>
             
