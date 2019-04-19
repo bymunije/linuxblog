@@ -6,37 +6,10 @@
     <description>Recent content in Blog on Bymunije</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 19 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Server Tips</title>
-      <link>/blog/server-tips/</link>
-      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/server-tips/</guid>
-      <description>Server 1.Linux下python虚拟环境 &amp;ndash;&amp;gt; 可自己装package 创建环境：conda create -p /home/byzhang/conda/envs/bymunije 激活环境：source activate bymunije 退出环境：source deactivate bymunije</description>
-    </item>
-    
-    <item>
-      <title>shell tips</title>
-      <link>/blog/shell-tips/</link>
-      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/shell-tips/</guid>
-      <description> 1.add header #!/bin/bash for file in /home/byzhang/data/Drug_combination/header/*.txt do file_name_txt=`basename $file` file_name=${file_name_txt%.*} add_header=${file_name}_header.txt echo $add_header head -n 1 ${file} &amp;gt; ./header/add_header/${add_header} done cd /home/byzhang/data/Drug_combination/header/add_header paste SL_score_first_modify_header.txt Cancer_Mutation_Score_Modify_header.txt cancer_gene_sensus_TSG_header.txt Drug_Target_inhibitor_all_deduplication_header.txt | tr -d &amp;quot;\r&amp;quot; &amp;gt; add_header.txt  #!/bin/bash for file in ./no_header_wt/*.txt do file_name=${file##.*/} #split_mut_wild_wt_PTGS2+TP53_Valdecoxib-341.txt before=${file_name%-*} #split_mut_wild_wt_TOP1+TP53_Topotecan Index_txt=${file_name##s*-} #split_mut_wild_wt_TOP1+TP53_Topotecan- Index=_${Index_txt%.*t} #number withHeader=&amp;quot;_withHeader.txt&amp;quot; add_withHeader=&amp;quot;$before$Index$withHeader&amp;quot; # echo ${file_name} , ${before} , ${Index} , ${add_withHeader} cat split_mut_wild_selected_GDSC_header.txt ${file} &amp;gt; ./split_every_drug_wt_withHeader/${add_withHeader} done  </description>
-    </item>
-    
-    <item>
-      <title>构建blog</title>
-      <link>/blog/%E6%9E%84%E5%BB%BAblog/</link>
-      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/%E6%9E%84%E5%BB%BAblog/</guid>
-      <description>软件准备 安装R(https://www.r-project.org/) 安装rstudio(https://www.rstudio.com/)</description>
-    </item>
     
     <item>
       <title>离开是为了更好的回来</title>

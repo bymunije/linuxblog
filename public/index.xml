@@ -12,29 +12,47 @@
     
     
     <item>
-      <title>Server Tips</title>
-      <link>/blog/server-tips/</link>
+      <title>Github push</title>
+      <link>/study/github-push/</link>
       <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/server-tips/</guid>
+      <guid>/study/github-push/</guid>
+      <description>上传本地文件到GitHub 第一步：建立git仓库 1)cd到你的本地项目根目录下(或者cd加空格再把项目的文件夹直接拖进终端里,然后回车) (2</description>
+    </item>
+    
+    <item>
+      <title>Python code</title>
+      <link>/study/python-code/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/study/python-code/</guid>
+      <description>Basic code 1.split [&amp;lsquo;a;b&amp;rsquo;] to [&amp;lsquo;a&amp;rsquo;],[&amp;lsquo;b&amp;rsquo;] split_target = open(&amp;quot;Processing_target_nan_split.txt&amp;quot;,&#39;w&#39;) with open(&#39;Processing_target_nan_withHeader.txt&#39;) as Processing_target: count = 0 for line in Processing_target: count += 1 try: line = line.replace(&#39;\n&#39;,&#39;&#39;)#去掉末尾换行符 Target = line.split(&#39;\t&#39;)[7].split(&amp;quot;;&amp;quot;)[:]#split Index_drug = line.split(&amp;quot;\t&amp;quot;)[0] Index_cellLine = line.split(&amp;quot;\t&amp;quot;)[1] AUC = line.split(&amp;quot;\t&amp;quot;)[2] cellLine_name= line.split(&amp;quot;\t&amp;quot;)[5] DrugName</description>
+    </item>
+    
+    <item>
+      <title>Server Tips</title>
+      <link>/study/server-tips/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/study/server-tips/</guid>
       <description>Server 1.Linux下python虚拟环境 &amp;ndash;&amp;gt; 可自己装package 创建环境：conda create -p /home/byzhang/conda/envs/bymunije 激活环境：source activate bymunije 退出环境：source deactivate bymunije</description>
     </item>
     
     <item>
       <title>shell tips</title>
-      <link>/blog/shell-tips/</link>
+      <link>/study/shell-tips/</link>
       <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/shell-tips/</guid>
+      <guid>/study/shell-tips/</guid>
       <description> 1.add header #!/bin/bash for file in /home/byzhang/data/Drug_combination/header/*.txt do file_name_txt=`basename $file` file_name=${file_name_txt%.*} add_header=${file_name}_header.txt echo $add_header head -n 1 ${file} &amp;gt; ./header/add_header/${add_header} done cd /home/byzhang/data/Drug_combination/header/add_header paste SL_score_first_modify_header.txt Cancer_Mutation_Score_Modify_header.txt cancer_gene_sensus_TSG_header.txt Drug_Target_inhibitor_all_deduplication_header.txt | tr -d &amp;quot;\r&amp;quot; &amp;gt; add_header.txt  #!/bin/bash for file in ./no_header_wt/*.txt do file_name=${file##.*/} #split_mut_wild_wt_PTGS2+TP53_Valdecoxib-341.txt before=${file_name%-*} #split_mut_wild_wt_TOP1+TP53_Topotecan Index_txt=${file_name##s*-} #split_mut_wild_wt_TOP1+TP53_Topotecan- Index=_${Index_txt%.*t} #number withHeader=&amp;quot;_withHeader.txt&amp;quot; add_withHeader=&amp;quot;$before$Index$withHeader&amp;quot; # echo ${file_name} , ${before} , ${Index} , ${add_withHeader} cat split_mut_wild_selected_GDSC_header.txt ${file} &amp;gt; ./split_every_drug_wt_withHeader/${add_withHeader} done  </description>
     </item>
     
     <item>
       <title>构建blog</title>
-      <link>/blog/%E6%9E%84%E5%BB%BAblog/</link>
+      <link>/study/%E6%9E%84%E5%BB%BAblog/</link>
       <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/%E6%9E%84%E5%BB%BAblog/</guid>
+      <guid>/study/%E6%9E%84%E5%BB%BAblog/</guid>
       <description>软件准备 安装R(https://www.r-project.org/) 安装rstudio(https://www.rstudio.com/)</description>
     </item>
     

@@ -226,7 +226,7 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="./blog/server-tips/">Server Tips</a></h3>
+                                <h3><a href="./study/github-push/">Github push</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2019-04-19'>
@@ -238,7 +238,7 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="./blog/shell-tips/">shell tips</a></h3>
+                                <h3><a href="./study/python-code/">Python code</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2019-04-19'>
@@ -250,7 +250,31 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="./blog/%E6%9E%84%E5%BB%BAblog/">构建blog</a></h3>
+                                <h3><a href="./study/server-tips/">Server Tips</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-04-19'>
+                                    April 19, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="./study/shell-tips/">shell tips</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2019-04-19'>
+                                    April 19, 2019</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="./study/%E6%9E%84%E5%BB%BAblog/">构建blog</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2019-04-18'>
@@ -284,30 +308,6 @@
 
                         </article>
                 
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="./blog/%E7%8C%9D%E4%B8%8D%E5%8F%8A%E9%98%B2%E7%9A%84%E5%BC%80%E9%A2%98%E5%92%8C%E7%BB%84%E4%BC%9A/">猝不及防的开题和组会</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2018-12-02'>
-                                    December 2, 2018</time>
-                            </header>
-                            
-
-                        </article>
-                
-                        <article class="mini-post">
-                            <header>
-                                <h3><a href="./blog/moments-we-shared/">Moments We Shared</a></h3>
-                                
-                                <time class="published" datetime=
-                                    '2018-11-18'>
-                                    November 18, 2018</time>
-                            </header>
-                            
-
-                        </article>
-                
 
                 
                     <a href=
@@ -330,7 +330,7 @@
   <header>
     <div class="title">
         
-            <h2><a href="./blog/server-tips/">Server Tips</a></h2>
+            <h2><a href="./study/github-push/">Github push</a></h2>
         
         
     </div>
@@ -356,162 +356,63 @@
   <div id="content">
     
 
-<h1 id="font-color-orange-size-6-server-font"><font color=orange size=6>Server</font></h1>
+<h2 id="上传本地文件到github">上传本地文件到GitHub</h2>
 
-<h2 id="1-linux下python虚拟环境-可自己装package">1.Linux下python虚拟环境 &ndash;&gt; 可自己装package</h2>
+<h3 id="第一步-建立git仓库">第一步：建立git仓库</h3>
+
+<p>1)cd到你的本地项目根目录下(或者cd加空格再把项目的文件夹直接拖进终端里,然后回车)</p>
+
+<p>(2)执行git的初始化命令</p>
+
+<pre><code>git init
+</code></pre>
+
+<h3 id="第二步-将项目的所有文件添加到仓库中">第二步：将项目的所有文件添加到仓库中</h3>
+
+<pre><code>git add filename
+</code></pre>
+
+<h3 id="第三步-将add的文件commit到仓库">第三步：将add的文件commit到仓库</h3>
+
+<pre><code>git commit -m &quot;创建仓库&quot;
+</code></pre>
+
+<h3 id="第四步-在github上创建repository-拿到仓库的https地址">第四步：在github上创建Repository,拿到仓库的https地址</h3>
+
+<h3 id="第五步-将本地的仓库关联到github上">第五步：将本地的仓库关联到github上</h3>
+
+<pre><code>git remote add origin https://github.com/china-dywade/wade.git…
+</code></pre>
+
+<p>后面的https链接地址即第四步的仓库url地址，如果不报错,进行下一步</p>
+
+<p>如果提示出错信息</p>
+
+<pre><code>fatal: remote origin already exists.
+</code></pre>
+
+<p>1、先输入<code>git remote rm origin</code><br />
+2、再输入<code>git remote add origin https://github.com/china-dywade/wade.git</code><br />
+就不会报错了<br />
+3、如果输入<code>git remote rm origin</code>还是报错<code>error: Could not remove config section 'remote.origin'</code>. 我们需要修改gitconfig文件的内容</p>
+
+<p>4、找到github的安装路径</p>
+
+<p>5、找到一个名为gitconfig的文件，打开它把里面的[remote &laquo;origin&raquo;]那一行删掉就好了！</p>
+
+<h3 id="第六步-上传github之前-先pull">第六步：上传github之前，先pull</h3>
+
+<p>执行如下命令：<code>git pull origin master</code>,如果不报错,进行下一步就好</p>
 
 <ul>
-<li>创建环境：<code>conda create -p /home/byzhang/conda/envs/bymunije</code><br /></li>
-<li>激活环境：<code>source activate bymunije</code><br /></li>
-<li>退出环境：<code>source deactivate bymunije</code><br />
-<br /></li>
+<li><p>如果是新建的项目，pull的时候报错<code>fatal: Couldn't find remote ref master</code>，是这个项目还没有文件，直接把本地修改的上传就可以了，不需要pull</p></li>
+
+<li><p>如果出现报错 <code>fatal: Couldn't find remote ref master</code>或者<code>fatal: 'origin' does not appear to be a git repository</code>以及<code>fatal: Could not read from remote repository</code>请重新执行 <code>git remote add origin https://github.com/china-dywade/wade.git</code>直到不报错为止。</p></li>
 </ul>
 
-<h2 id="2-jupyter">2.Jupyter</h2>
+<h3 id="第七步-上传代码到github远程仓库">第七步，上传代码到github远程仓库</h3>
 
-<h3 id="1-使用">(1).使用</h3>
-
-<pre><code>jupyter notebook --port='20021' --ip='0.0.0.0
-</code></pre>
-
-<ul>
-<li>端口范围：20021-200030<br /></li>
-<li>ip: server IP<br />
-<br /></li>
-</ul>
-
-<h3 id="2-设置theme">(2). 设置theme</h3>
-
-<pre><code>jt -t monokai -f fira -fs 13 -cellw 90% -ofs 11 -dfs 11 -T -N 
-</code></pre>
-
-<ul>
-<li>fira: 字体<br /></li>
-<li>-T： 标题栏<br />
-<br /></li>
-</ul>
-
-<h3 id="3-更改主题后输出显示不全">(3). 更改主题后输出显示不全</h3>
-
-<p>打开custom.css文件：</p>
-
-<pre><code>div.output_area {
-display: -webkit-box;
-padding: 13px;
-}
-</code></pre>
-
-<h3 id="4-安装nbextensions标签页">(4). 安装Nbextensions标签页</h3>
-
-<p>1.安装nbextensions</p>
-
-<pre><code>pip install jupyter_contrib_nbextensions -i https://pypi.mirrors.ustc.edu.cn/simple
-jupyter contrib nbextension install --user
-</code></pre>
-
-<p>2.安装nbextensions_configurator</p>
-
-<pre><code>pip install --user jupyter_nbextensions_configurator 
-jupyter nbextensions_configurator enable --user
-</code></pre>
-
-<p>3.显示nbextensions</p>
-
-<pre><code>python -m pip install --user jupyter_contrib_nbextensions
-</code></pre>
-
-<h2 id="3-xshell直接登录服务器">3.Xshell直接登录服务器</h2>
-
-<pre><code>ssh byzhang@100.64.166.214 22 
-</code></pre>
-
-<h2 id="4-rstudio-server">4.Rstudio Server</h2>
-
-<ul>
-<li>server_ip:端口<br />
-<code>
-100.64.166.214:20004
-</code><br /></li>
-<li>查看状态<br />
-<code>
-rstudio-server status
-</code><br />
-<br /></li>
-</ul>
-
-<hr />
-
-<h1 id="font-color-orange-size-6-cmd-font"><font color=orange size=6>cmd</font></h1>
-
-<h2 id="1-传输文件">1.传输文件</h2>
-
-<pre><code>scp byzhang@100.64.166.214:/home/byzhang/data/cell_line/split_wild_mut/split_mut_wild/split_mut_wild_all.txt C:/Users/zhang/Desktop/试试/
-</code></pre>
-
-<ul>
-<li>byzhang@100.64.166.214: 服务器<br />
-<br /></li>
-</ul>
-
-<hr />
-
-<h2 id="font-color-orange-size-6-awk-font"><font color=orange size=6>awk</font></h2>
-
-<h3 id="1-summary">1.Summary</h3>
-
-<ul>
-<li>$0：整行<br /></li>
-<li>从1开始计数<br /></li>
-<li>只能有一对单引号<br /></li>
-<li>语句结束加分号(;)<br />
-<br /></li>
-</ul>
-
-<h3 id="2-note">2. Note</h3>
-
-<ul>
-<li>BEGIN:从第一行开始<br /></li>
-<li>FS:输入字段分隔符，默认空格<br /></li>
-<li>OFS:输出字段分隔符，默认空格<br /></li>
-<li>||/&amp;&amp;: 或/与<br />
-<br /></li>
-</ul>
-
-<pre><code>cat file.txt | awk 'BEGIN {FS=&quot;\t&quot;;OFS=&quot;\t&quot;} {if ($20 == &quot;%&quot; || $20 == &quot;%%&quot;) {$23 = $14; print $0} else if ($20 != &quot;%&quot; &amp;&amp; $20 != &quot;%%&quot;) {$23 = $22; print $0}}' &gt; file2.txt
-</code></pre>
-
-<hr />
-
-<h2 id="font-color-orange-size-6-vim-font"><font color=orange size=6>Vim</font></h2>
-
-<h3 id="1-set-list-查看分隔符">1.set list:查看分隔符</h3>
-
-<hr />
-
-<h2 id="font-color-orange-size-6-ps-font"><font color=orange size=6>ps</font></h2>
-
-<h3 id="1-查看用户所有进程">1.查看用户所有进程</h3>
-
-<pre><code>ps -aux | grep byzhang
-</code></pre>
-
-<hr />
-
-<h2 id="font-color-orange-size-6-du-font"><font color=orange size=6>du</font></h2>
-
-<h3 id="1-查看占用磁盘大小">1.查看占用磁盘大小</h3>
-
-<pre><code>du -sh
-</code></pre>
-
-<hr />
-
-<h2 id="font-color-orange-size-6-common-code-font"><font color=orange size=6>Common code</font></h2>
-
-<h3 id="1-查看文件夹下文件数目">1.查看文件夹下文件数目</h3>
-
-<pre><code>  ls -l | grep '^-' | wc -l
-</code></pre>
+<p><code>git push -u origin master</code>执行完后，如果没有异常，等待执行完就上传成功了，中间可能会让你输入Username和Password，输入github的账号和密码就行了</p>
 
   </div>
 
@@ -539,7 +440,7 @@ rstudio-server status
                 <i class="fa fa-tags"></i>
                 
                 
-                <li><a class="article-category-link" href="./tags/linux">Linux</a></li>
+                <li><a class="article-category-link" href="./tags/github">Github</a></li>
                 
             
         
@@ -577,8 +478,8 @@ rstudio-server status
 
 <ul class="actions pagination">
     
-        <li><a href="./blog/shell-tips/"
-                class="button big previous">shell tips</a></li>
+        <li><a href="./study/python-code/"
+                class="button big previous">Python code</a></li>
     
 
     
@@ -618,7 +519,7 @@ rstudio-server status
 
 
 <li>
-  <a href="mailto:?subject=Check out this post by Bymunije&amp;body=%2fblog%2fserver-tips%2f" target="_blank" class="share-btn email">
+  <a href="mailto:?subject=Check out this post by Bymunije&amp;body=%2fstudy%2fgithub-push%2f" target="_blank" class="share-btn email">
     <i class="fa fa-envelope"></i>
     <p>Email</p>
   </a>
@@ -668,7 +569,7 @@ rstudio-server status
           <article class="mini-post">
             <header>
               <h3>
-                <a href="./blog/server-tips/">Server Tips</a>
+                <a href="./study/github-push/">Github push</a>
               </h3>
               
               <time class="published" datetime='2019-04-19'>
@@ -682,7 +583,7 @@ rstudio-server status
           <article class="mini-post">
             <header>
               <h3>
-                <a href="./blog/shell-tips/">shell tips</a>
+                <a href="./study/python-code/">Python code</a>
               </h3>
               
               <time class="published" datetime='2019-04-19'>
@@ -696,7 +597,35 @@ rstudio-server status
           <article class="mini-post">
             <header>
               <h3>
-                <a href="./blog/%E6%9E%84%E5%BB%BAblog/">构建blog</a>
+                <a href="./study/server-tips/">Server Tips</a>
+              </h3>
+              
+              <time class="published" datetime='2019-04-19'>
+                April 19, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="./study/shell-tips/">shell tips</a>
+              </h3>
+              
+              <time class="published" datetime='2019-04-19'>
+                April 19, 2019
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="./study/%E6%9E%84%E5%BB%BAblog/">构建blog</a>
               </h3>
               
               <time class="published" datetime='2019-04-18'>
@@ -729,34 +658,6 @@ rstudio-server status
               
               <time class="published" datetime='2019-01-26'>
                 January 26, 2019
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="./blog/%E7%8C%9D%E4%B8%8D%E5%8F%8A%E9%98%B2%E7%9A%84%E5%BC%80%E9%A2%98%E5%92%8C%E7%BB%84%E4%BC%9A/">猝不及防的开题和组会</a>
-              </h3>
-              
-              <time class="published" datetime='2018-12-02'>
-                December 2, 2018
-              </time>
-            </header>
-            
-
-          </article>
-        
-          <article class="mini-post">
-            <header>
-              <h3>
-                <a href="./blog/moments-we-shared/">Moments We Shared</a>
-              </h3>
-              
-              <time class="published" datetime='2018-11-18'>
-                November 18, 2018
               </time>
             </header>
             
