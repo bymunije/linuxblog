@@ -5,7 +5,7 @@ enableEmoji = true
 title = "Bymunije"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
-paginate = 11
+paginate = 12
 disqusShortname = "bymunije"
 googleAnalytics = ""
 pluralizeListTitles = false
@@ -26,11 +26,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   extensions = ["hardLineBreak"]
   
 [params]
-  [params.logo]
-    url = "favicon.ico"
-    width = 16
-    height = 16
-    alt = "Logo"
   disqus               = "bymunije"
   # Sets the meta tag description
   description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
