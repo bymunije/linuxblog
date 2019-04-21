@@ -26,7 +26,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   extensions = ["hardLineBreak"]
   
 [params]
-  favicon = "static/img/favicon.ico"
+  # favicon = "static/img/favicon.ico"
   disqus               = "bymunije"
   # Sets the meta tag description
   description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
