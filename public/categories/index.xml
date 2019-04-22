@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Bymunije</title>
+    <title>Categories on Bymunije</title>
     <link>/categories/</link>
-    <description>Recent content on Bymunije</description>
+    <description>Recent content in Categories on Bymunije</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
@@ -12,39 +12,39 @@
     
     
     <item>
-      <title>Fancy App 1</title>
-      <link>/itemized/item1/</link>
-      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>/categories/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/itemized/item1/</guid>
-      <description> App 1 </description>
+      <guid>/categories/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Fancy App 2</title>
-      <link>/itemized/item2/</link>
-      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      <title>Life</title>
+      <link>/categories/life/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/itemized/item2/</guid>
-      <description> App 2 </description>
+      <guid>/categories/life/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Fancy App 3</title>
-      <link>/itemized/item3/</link>
-      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      <title>Study</title>
+      <link>/categories/study/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/itemized/item3/</guid>
-      <description> App 3 </description>
+      <guid>/categories/study/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Fancy App 4</title>
-      <link>/itemized/item4/</link>
-      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      <title>Reading</title>
+      <link>/categories/reading/</link>
+      <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/itemized/item4/</guid>
-      <description> App 4 </description>
+      <guid>/categories/reading/</guid>
+      <description></description>
     </item>
     
   </channel>

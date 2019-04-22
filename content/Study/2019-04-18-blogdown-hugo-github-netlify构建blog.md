@@ -135,12 +135,14 @@ git push -u origin master
 (1).进入`/themes/hugo-future-imperfect/layouts/partials/shortcodes/`，新建并编辑[aplayer.html] (https://github.com/kmahyyg/kmahyyg.github.io/blob/raw2/themes/aether/layouts/shortcodes/aplayer.html)
 (2).使用时可在.md的任何地方
 
-```html
+
+```
 <!-- This enables you to use audio in your post -->
-{{<aplayer title="music-name" author="music-author"   musicurl="path/to/music.mp3">}}
+{ {<aplayer title="music-name" author="music-author"   musicurl="path/to/music.mp3">} }
 <!-- More advanced example -->
-{{<aplayer title="music-name" author="music-author" musicurl="path/to/music.mp3" lrcfile="path/to/lrcfile.lrc" coverimg="path/to/music-cover.jpg" hls_src="false" mini="true" fixed="false" themecolor="#b89a66">}}
-``` 
+{ {<aplayer title="music-name" author="music-author" musicurl="path/to/music.mp3" lrcfile="path/to/lrcfile.lrc" coverimg="path/to/music-cover.jpg" hls_src="false" mini="true" fixed="false" themecolor="#b89a66">} }
+```
+
 
 
 Params for configuration:
@@ -159,7 +161,7 @@ Params for configuration:
 
 `fixed` and `mini` are conflicted, please do not set both to true.
 
-具体[阅读] (https://github.com/kmahyyg/kmahyyg.github.io/blob/raw2/themes/aether/README.md)
+具体请[阅读] (https://github.com/kmahyyg/kmahyyg.github.io/blob/raw2/themes/aether/README.md)
 
 ## 3.使用Highlight.js代码高亮
 
