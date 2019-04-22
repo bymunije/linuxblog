@@ -5,7 +5,7 @@ date: '2018-11-18'
 slug: moments-we-shared
 categories:
   - Reading
-tags: 
+tags:
   - thinking
 description: ''
 featured: ''
