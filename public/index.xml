@@ -6,10 +6,19 @@
     <description>Recent content on Bymunije</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>无题</title>
+      <link>/blog/%E6%97%A0%E9%A2%98/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/%E6%97%A0%E9%A2%98/</guid>
+      <description>var ap_new_id = &#34;aplayer-&#34; + Math.random().toString(36).substring(2, 10); document.getElementById(&#34;aplayer&#34;).setAttribute(&#34;id&#34;, ap_new_id); var ap = new APlayer({ container: document.getElementById(ap_new_id), lrcType: 3, audio: [{ name: &#34;Stay With Me&#34;, artist: &#34;朴灿烈\u0026Punch&#34;, url: &#34;/music/video/Stay With Me.mp3&#34;, mutex: true, cover: &#34;/music/cover/stay with me.jpg&#34;, theme: &#34;#b89a66&#34;, lrc: &#34;/music/lrc/Stay With Me.lrc&#34; }] }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);</description>
+    </item>
     
     <item>
       <title>Github push</title>

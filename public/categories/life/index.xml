@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>life on Bymunije</title>
+    <title>Life on Bymunije</title>
     <link>/categories/life/</link>
-    <description>Recent content in life on Bymunije</description>
+    <description>Recent content in Life on Bymunije</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/life/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>无题</title>
+      <link>/blog/%E6%97%A0%E9%A2%98/</link>
+      <pubDate>Sun, 21 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/%E6%97%A0%E9%A2%98/</guid>
+      <description>var ap_new_id = &#34;aplayer-&#34; + Math.random().toString(36).substring(2, 10); document.getElementById(&#34;aplayer&#34;).setAttribute(&#34;id&#34;, ap_new_id); var ap = new APlayer({ container: document.getElementById(ap_new_id), lrcType: 3, audio: [{ name: &#34;Stay With Me&#34;, artist: &#34;朴灿烈\u0026Punch&#34;, url: &#34;/music/video/Stay With Me.mp3&#34;, mutex: true, cover: &#34;/music/cover/stay with me.jpg&#34;, theme: &#34;#b89a66&#34;, lrc: &#34;/music/lrc/Stay With Me.lrc&#34; }] }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);</description>
+    </item>
     
     <item>
       <title>离开是为了更好的回来</title>
@@ -36,15 +45,6 @@
       
       <guid>/blog/%E7%8C%9D%E4%B8%8D%E5%8F%8A%E9%98%B2%E7%9A%84%E5%BC%80%E9%A2%98%E5%92%8C%E7%BB%84%E4%BC%9A/</guid>
       <description>真的不能再拖了 都2018的最后一个月了 国庆等学校发钱没等到 却等到了开题 去年都是12月初 今年提前到了10月 就觉得都不让人好好过完国庆 虽然这样想</description>
-    </item>
-    
-    <item>
-      <title>Moments We Shared</title>
-      <link>/blog/moments-we-shared/</link>
-      <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/moments-we-shared/</guid>
-      <description>特别开心可以在图书馆借到张嘉佳的《云边有个小卖部》 因为已经被别人借走了 所以是预约以后拿到的 其实不是很懂为什么要用这个英文 他说这是一本写给离开</description>
     </item>
     
     <item>
@@ -90,15 +90,6 @@
       
       <guid>/blog/%E4%BC%97%E5%A4%9A%E4%BA%BA%E7%94%9F%E7%AC%AC%E4%B8%80%E6%AC%A1/</guid>
       <description>其实想写些什么有一段时间了 一直拖到现在 刚从校医院回来没多久 说是急性肠胃炎 今天早上快5点的时候醒了 觉得很恶心 然后肚子痛开始拉肚子 疼的时候吐了五</description>
-    </item>
-    
-    <item>
-      <title>且以永日摘抄</title>
-      <link>/blog/%E4%B8%94%E4%BB%A5%E6%B0%B8%E6%97%A5%E6%91%98%E6%8A%84/</link>
-      <pubDate>Sun, 13 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/blog/%E4%B8%94%E4%BB%A5%E6%B0%B8%E6%97%A5%E6%91%98%E6%8A%84/</guid>
-      <description>《清醒纪》 1.女人对一个男人的态度 要么如同隔岸观烟花 心里惊动 无关痛痒 满目照耀/ 要么就是冷暖自知 血肉纠缠 不依不饶/ 她没有中间状态 2.喜欢比爱困</description>
     </item>
     
     <item>

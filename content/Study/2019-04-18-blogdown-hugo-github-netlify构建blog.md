@@ -122,6 +122,55 @@ git push -u origin master
 
 <img src="/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/7.jpeg" alt="" width="400px" height="300px"/>
 
+# 小细节的折腾
+
+## 1.修改浏览器小图标.ico
+
+(1).[Photoshop](https://blog.csdn.net/m_nanle_xiaobudiu/article/details/80961869)将用到的图片保存为favicon.png 格式，大小为32*32
+(2).使用在线工具 [ConvertICO.com - Convert PNG to ICO and ICO to PNG] (https://convertico.com/) 将其转换为 ico 格式
+(3).为了获得较好的兼容性，可以使用 [BASE64] (https://jpillora.com/base64-encoder/) 将图片直接存放在网页的 head 中,可参考 [Adding a favicon to a static HTML page - Stack Overflow] (https://stackoverflow.com/questions/9943771/adding-a-favicon-to-a-static-html-page/34699173#34699173) 链接，即将 `<link href="data:image/x-icon;base64,YourBase64StringHere" rel="icon" type="image/x-icon" />` 加入 `/themes/hugo-future-imperfect/layouts/partials/header.html`
+
+## 2.使用aplayer html5播放器给网站增加音乐播放功能
+
+(1).进入`/themes/hugo-future-imperfect/layouts/partials/shortcodes/`，新建并编辑[aplayer.html] (https://github.com/kmahyyg/kmahyyg.github.io/blob/raw2/themes/aether/layouts/shortcodes/aplayer.html)
+(2).使用时可在.md的任何地方
+
+```html
+<!-- This enables you to use audio in your post -->
+{{<aplayer title="music-name" author="music-author" musicurl="path/to/music.mp3">}}
+<!-- More advanced example -->
+{{<aplayer title="music-name" author="music-author" musicurl="path/to/music.mp3" lrcfile="path/to/lrcfile.lrc" coverimg="path/to/music-cover.jpg" hls_src="false" mini="true" fixed="false" themecolor="#b89a66">}}
+```
+Params for configuration:
+
+|Name|Type|Required|Notes|
+|:----:|:----:|:----:|:----:|
+|`title`|string|true| Music title |
+|`author`|string|true| Music artist |
+|`musicurl`|string|true| Music file URL |
+|`coverimg`|string|false| Music cover image URL |
+|`lrcfile`|string|false| Lyric URL in LRC format |
+|`themecolor`|string|false| According to cover, change the player main color of the theme to an RGB hexed color, example: '#b7daff' |
+|`fixed`|boolean in string|false| Show player at the left bottom |
+|`mini`|boolean in string|false| Show player in a small square |
+|`hls_src`|boolean|false| `musicurl` is a HLS source | 
+
+`fixed` and `mini` are conflicted, please do not set both to true.
+
+具体[阅读] (https://github.com/kmahyyg/kmahyyg.github.io/blob/raw2/themes/aether/README.md)
+
+## 3.使用Highlight.js代码高亮
+
+在`/themes/hugo-future-imperfect/layouts/partials/header.html`的模板中，添加以下内容：
+
+```
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/ocean.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+```
+
+第一行的monokai.min.css是配色方案，第二行是highlight.js的压缩版，第三行是使用highlight.js着色，更多可前往[这里] (https://cdnjs.com/libraries/highlight.js)
+
 # Quenstion:
 #### 1.git在github远程创建仓库后, 利用gitbash进行提交本地文件的时候出现如下错误：
 
@@ -198,3 +247,4 @@ Home目录下会新建一个.gitconfig文件
 - 测试
 
 ssh -T git@github.com
+
