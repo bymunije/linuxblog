@@ -4,7 +4,7 @@ author: Bymunije
 date: '2018-11-18'
 slug: moments-we-shared
 categories:
-  - life
+  - Reading
 tags: 
   - thinking
 description: ''
