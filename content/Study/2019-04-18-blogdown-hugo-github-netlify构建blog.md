@@ -137,10 +137,12 @@ git push -u origin master
 
 ```html
 <!-- This enables you to use audio in your post -->
-{{<aplayer title="music-name" author="music-author" musicurl="path/to/music.mp3">}}
+{{<aplayer title="music-name" author="music-author"   musicurl="path/to/music.mp3">}}
 <!-- More advanced example -->
 {{<aplayer title="music-name" author="music-author" musicurl="path/to/music.mp3" lrcfile="path/to/lrcfile.lrc" coverimg="path/to/music-cover.jpg" hls_src="false" mini="true" fixed="false" themecolor="#b89a66">}}
-```
+``` 
+
+
 Params for configuration:
 
 |Name|Type|Required|Notes|
@@ -170,6 +172,24 @@ Params for configuration:
 ```
 
 第一行的monokai.min.css是配色方案，第二行是highlight.js的压缩版，第三行是使用highlight.js着色，更多可前往[这里] (https://cdnjs.com/libraries/highlight.js)
+
+## 4.修改`<code>`背景色
+
+进入`static/css`,在`.css`文件中添加如下代码，更多可参考[这里] (http://ericnode.info/post/move_to_hugo/)
+
+```
+code {
+	font-family: "Consolas", Courier New, Courier, monospace;
+	background-color:#eaeaea;
+	color:#f38181;
+	font-size:14px;
+	font-weight:normal;
+	margin: 3px 3px 3px 3px;
+	padding: 3px 3px 2px 3px;
+	border-radius: 6px;
+	border: 1px solid #e1e1e8;
+}
+```
 
 # Quenstion:
 #### 1.git在github远程创建仓库后, 利用gitbash进行提交本地文件的时候出现如下错误：

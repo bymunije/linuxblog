@@ -84,14 +84,6 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   highlightjsTheme = "github"
   MathJaxCDN = "//cdn.bootcss.com"
   MathJaxVersion = "2.7.1"
-  
-[params.colors]
-  # hugo-dusk colors
-  background = "#FFFFFF" # background color for the site  背景颜色
-  main = "#83ca3d"     # 修饰的绿色
-  text = "#404040"     # 文字颜色
-  code-quote-bg = "#c3ffc3" # background color for quotes and code blocks 代码块的背景色
-  copyright = "#404040" # copyright text color 
 
 # Disqus will take priority over Staticman (github.com/eduardoboucas/staticman)
 # due to its ease of use. Feel free to check out both and decide what you would

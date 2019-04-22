@@ -4,3 +4,14 @@
   is an official part of the theme (ex. Pull Requests) should be included in main.css
   within the formating given.
 */
+code {
+	font-family: "Consolas", Courier New, Courier, monospace;
+	background-color:#eaeaea;
+	color:#f38181;
+	font-size:14px;
+	font-weight:normal;
+	margin: 3px 3px 3px 3px;
+	padding: 3px 3px 2px 3px;
+	border-radius: 6px;
+	border: 1px solid #e1e1e8;
+}
