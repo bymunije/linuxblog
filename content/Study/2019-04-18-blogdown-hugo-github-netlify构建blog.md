@@ -194,7 +194,7 @@ code {
 ```
 
 # Quenstion:
-#### 1.git在github远程创建仓库后, 利用gitbash进行提交本地文件的时候出现如下错误：
+### 1.git在github远程创建仓库后, 利用gitbash进行提交本地文件的时候出现如下错误(直接在Github网页upload会导致readme.md文件不一致导致此错误）：
 
 <img src="/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/8.png" alt="" width="700px" height="250px"/>
 
@@ -225,18 +225,17 @@ git rebase tmp
 git push origin HEAD:master
 git branch -D tmp
 ```
-#### 2.Rstudio push 每次需要输入用户名和密码
+### 2.Rstudio push 每次需要输入用户名和密码
 
 解决办法：
 
-1.git bash进入你的项目目录，输入
-`git config --global credential.helper store`,然后会在本地生成一个文本，记录账号和密码
+1.git bash进入你的项目目录，输入`git config --global credential.helper store`,然后会在本地生成一个文本，记录账号和密码
 
 2.使用上述的命令配置好之后，再操作一次git pull，它会提示你输入账号密码，之后就不需要再次输入密码
 
-#### 3. 设置Git
+### 3. 设置Git
 
-(1).设置用户名和email。
+(1).设置用户名和email
 
 ```
 git config --global user.name "Your Name"
@@ -246,27 +245,17 @@ Home目录下会新建一个.gitconfig文件
 
 (2).GitHub账号添加SSH Keys
 
-以公钥认证方式访问SSH协议的Git服务器时无需输入口令，而且更安全。
-（访问HTTP协议的Git服务器时，比如提交修改，每次都需要输入口令）
+以公钥认证方式访问SSH协议的Git服务器时无需输入口令，而且更安全
 
 - 创建SSH key
-
-`ssh-keygen -t rsa -C "youremail@163.com"`
-系统会提示key的保存位置（一般是~/.ssh目录）和指定口令，
-保持默认，连续三次回车即可。
+`ssh-keygen -t rsa -C "youremail@163.com"`系统会提示key的保存位置（一般是~/.ssh目录）和指定口令，保持默认，连续三次回车即可
 
 - Copy SSH Key
-
-用vim打开文件`id_rsa.pub`文件内的内容，
-粘帖到github帐号管理的添加SSH key界面中`vim ~/.ssh/id_rsa.pub`
+用vim打开文件`id_rsa.pub`文件内的内容，粘帖到github帐号管理的添加SSH key界面中`vim ~/.ssh/id_rsa.pub`
 
 - 添加到GitHub
-
-登录github-> Accounting settings图标-> SSH key-> Add SSH key-> 
-填写SSH key的名称，然后将拷贝的`~/.ssh/id_rsa.pub`
-文件内容粘帖-> add key”按钮添加。
+登录`github-> Accounting settings-> SSH key-> Add SSH key`,填写SSH key的名称，然后将拷贝的`~/.ssh/id_rsa.pub`文件内容粘帖,`add key`按钮添加
 
 - 测试
-
-ssh -T git@github.com
+`ssh -T git@github.com`
 
