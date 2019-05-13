@@ -167,7 +167,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github           = "https://github.com/bymunije"
+  github           = "bymunije"
   # gitlab           = ""
   # stackoverflow    = "" # User Number
   # bitbucket        = ""
@@ -198,7 +198,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     # WeChat and QQ need testing.
     # wechat         = ""
     # qq             = "" # User ID Number
-  instagram        = "https://www.instagram.com/bymunije/"
+  instagram        = "bymunije"
   # tumblr           = ""
   # twitter          = "example"
   # skype            = ""
