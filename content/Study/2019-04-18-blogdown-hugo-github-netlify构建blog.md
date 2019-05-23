@@ -53,6 +53,7 @@ install.packages("devtools") devtools::install_github("rstudio/blogdown")
 ```
 blogdown:::install_hugo_bin("d:/hugo.exe")
 ```
+hugo版本为v0.55.6，导致`blogdown:::serve_site()`时出现问题`Error: failed to create file caches from configuration: mkdir /tmp/hugo_cache/linuxblog: permission denied`,可通过降低版本解决`blogdown::install_hugo('0.30', force = T, use_brew = F)`
 
 # Github新建一个仓库
 
