@@ -74,6 +74,28 @@ ssh byzhang@100.64.166.214 22
 ```
 rstudio-server status
 ```
+## 5.Vim配置
+
+打开`/home/`下的`.vimrc`,配置如下：
+
+```
+  1 syntax on                   " 自动语法高亮
+  2 set number                  " 显示行号
+  3 set cursorline              " 突出显示当前行
+  4 set ruler                   " 打开状态栏标尺
+  5 set tabstop=4               " 设定 tab 长度为 4
+  6 filetype plugin indent on   " 开启插件
+  7 set ignorecase smartcase    " 搜索时忽略大小写，但在有一个或以上大写字母时仍保持对大小写敏感
+  8 set incsearch               " 输入搜索内容时就显示搜索结果
+  9 set hlsearch                " 搜索时高亮显示被找到的文本
+ 10 set mouse=a                 " 设置鼠标定位
+ 11 set bg=dark                 " 显示不同的底色色调
+ 12 set showmode                " 左下角那一行的状态
+ 13 set autoindent              " 自动缩排
+ 14 set backspace=2             " 可随时用退格键删除
+ 15 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<     "高亮显示空格和TAB
+```
+- 设置vim中鼠标定位后，可通过`shift`+ 鼠标复制，可参考[这里](https://blog.csdn.net/sinkary/article/details/7531747)
 
 ***
 # <font color=orange size=6>cmd</font>
