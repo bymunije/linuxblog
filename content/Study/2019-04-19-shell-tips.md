@@ -50,11 +50,12 @@ do
 done
 ```
 # Conda创建python虚拟环境
+
  可参考[这里](https://blog.csdn.net/lyy14011305/article/details/59500819)
  
- 1、在所在系统中安装Anaconda,然后在命令行输入`conda -V`检验是否安装以及当前conda的版本。
+ 1、在所在系统中安装Anaconda,然后在命令行输入`conda -V`检验是否安装以及当前conda的版本
 
-2、conda常用的命令。
+2、conda常用的命令
 
     1）`conda list` 查看安装了哪些包
 
@@ -62,7 +63,7 @@ done
 
     3）`conda update conda` 检查更新当前conda
 
-3、创建python虚拟环境。
+3、创建python虚拟环境
 
      使用 `conda create -n your_env_name python=X.X`（2.7、3.6等)命令创建python版本为X.X、名字为`your_env_name`的虚拟环境
 
@@ -80,7 +81,7 @@ done
 
     使用命令`conda install -n your_env_name [package]`即可安装`package`到`your_env_name`中
 
-6、关闭虚拟环境(即从当前环境退出返回使用PATH环境中的默认python版本)。
+6、关闭虚拟环境(即从当前环境退出返回使用PATH环境中的默认python版本)
 
    使用如下命令:
 
