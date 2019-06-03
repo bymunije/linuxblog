@@ -18,7 +18,7 @@ type: post
 ## 1.add header
 ```
 #!/bin/bash
-for file in /home/byzhang/data/Drug_combination/header/*.txt
+for file in /home/usrname/data/Drug_combination/header/*.txt
 do
 	file_name_txt=`basename $file`
 	file_name=${file_name_txt%.*}
@@ -28,7 +28,7 @@ do
 done
 
 
-cd /home/byzhang/data/Drug_combination/header/add_header
+cd /home/usrname/data/Drug_combination/header/add_header
 paste SL_score_first_modify_header.txt Cancer_Mutation_Score_Modify_header.txt cancer_gene_sensus_TSG_header.txt Drug_Target_inhibitor_all_deduplication_header.txt | tr -d "\r" > add_header.txt 
 ```
 ```
@@ -68,11 +68,11 @@ bash Anaconda3-5.0.1-Linux-x86_64.sh
 - 4).修改环境变量使用anaconda的python，打开用户目录下的`.bashrc`,添加
 
 ```
-export PATH=/home/byzhang/software/anaconda3/bin:$PATH
-export PYTHONPATH="/home/byzhang/software/anaconda3/bin/python"
+export PATH=/home/usrname/software/anaconda3/bin:$PATH
+export PYTHONPATH="/home/usrname/software/anaconda3/bin/python"
 ```
 
-其中`/home/byzhang/software/anaconda3/bin`为实际安装目录，然后运行`source  .bashrc`
+其中`/home/usrname/software/anaconda3/bin`为实际安装目录，然后运行`source  .bashrc`
 
 2、conda常用的命令
 
@@ -85,6 +85,8 @@ export PYTHONPATH="/home/byzhang/software/anaconda3/bin/python"
     4）`source activate your_name` 激活环境
 
     5）`source deactivate your_name` 退出环境
+
+    6）`conda info --e`查看当前版本分支，多python环境可参考[这里](http://www.afox.cc/archives/390)
 
 3、创建python虚拟环境
 
