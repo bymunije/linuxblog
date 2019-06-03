@@ -15,12 +15,8 @@ linktitle: ''
 type: post
 ---
 # <font color=orange size=6>Server</font>
-## 1.Linux下python虚拟环境 --> 可自己装package
-- 创建环境：`conda create -p /home/byzhang/conda/envs/bymunije`
-- 激活环境：`source activate bymunije`
-- 退出环境：`source deactivate bymunije`
 
-## 2.Jupyter
+## 1.Jupyter
 ### (1).使用
 ```
 jupyter notebook --port='20021' --ip='0.0.0.0
@@ -59,14 +55,17 @@ jupyter nbextensions_configurator enable --user
 python -m pip install --user jupyter_contrib_nbextensions
 ```
 
-## 3.Xshell直接登录服务器
+## 2.Xshell直接登录服务器
 
 ``` 
 ssh byzhang@100.64.166.214 22 
 ```
 
-## 4.Rstudio Server
+## 3.Rstudio Server
 - server_ip:端口
+  - SS1:20004
+    SS4:20014
+  
 ```
 100.64.166.214:20004
 ```
@@ -74,7 +73,7 @@ ssh byzhang@100.64.166.214 22
 ```
 rstudio-server status
 ```
-## 5.Vim配置
+## 4.Vim配置
 
 打开`/home/`下的`.vimrc`,配置如下：
 
