@@ -79,24 +79,24 @@ rstudio-server status
 打开`/home/`下的`.vimrc`,配置如下：
 
 ```
-  1 syntax on                   " 自动语法高亮
-  2 set number                  " 显示行号
-  3 set cursorline              " 突出显示当前行
-  4 set ruler                   " 打开状态栏标尺
-  5 set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%]
-  6 set tabstop=4               " 设定 tab 长度为 4
-  7 set expandtab               " 输入tab自动转为空格
-  8 filetype plugin indent on   " 开启插件
-  9 set ignorecase smartcase    " 搜索时忽略大小写，但在有一个或以上大写字母时仍保持对大小写敏感
- 10 set incsearch               " 输入搜索内容时就显示搜索结果
- 11 set hlsearch                " 搜索时高亮显示被找到的文本
- 12 set mouse=a                 " 设置鼠标定位
- 13 set bg=dark                 " 显示不同的底色色调
- 14 set showmode                " 左下角那一行的状态
- 15 set autoindent              " 自动缩排
- 16 set backspace=2             " 可随时用退格键删除
- 17 [set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<] " 文本高亮和TAB
- 18 set ff=unix                 " 使用unix换行符
+  syntax on                   " 自动语法高亮
+  set number                  " 显示行号
+  set cursorline              " 突出显示当前行
+  set ruler                   " 打开状态栏标尺
+  set statusline=[%F]%y%r%m%*%=[Line:%l/%L,Column:%c][%p%%]
+  set tabstop=4               " 设定 tab 长度为 4
+  set expandtab               " 输入tab自动转为空格
+  filetype plugin indent on   " 开启插件
+  set ignorecase smartcase    " 搜索时忽略大小写，但在有一个或以上大写字母时仍保持对大小写敏感
+  set incsearch               " 输入搜索内容时就显示搜索结果
+  set hlsearch                " 搜索时高亮显示被找到的文本
+  set mouse=a                 " 设置鼠标定位
+  set bg=dark                 " 显示不同的底色色调
+  set showmode                " 左下角那一行的状态
+  set autoindent              " 自动缩排
+  set backspace=2             " 可随时用退格键删除
+  set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:< " 文本高亮和TAB
+  set ff=unix                 " 使用unix换行符
  ```
  
 - 设置vim中鼠标定位后，可通过`shift`+ 鼠标复制，可参考[这里](https://blog.csdn.net/sinkary/article/details/7531747)
