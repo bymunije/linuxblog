@@ -95,9 +95,8 @@ rstudio-server status
  14 set showmode                " 左下角那一行的状态
  15 set autoindent              " 自动缩排
  16 set backspace=2             " 可随时用退格键删除
- 17 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
- " 高亮显示空格和TAB
- 18 set ff=unix                 " 使用unix换行符
+ 17 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:< " 高亮显示空格和TAB
+18 set ff=unix                 " 使用unix换行符
  ```
  
 - 设置vim中鼠标定位后，可通过`shift`+ 鼠标复制，可参考[这里](https://blog.csdn.net/sinkary/article/details/7531747)
