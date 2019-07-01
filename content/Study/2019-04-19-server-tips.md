@@ -95,7 +95,7 @@ rstudio-server status
  14 set showmode                " 左下角那一行的状态
  15 set autoindent              " 自动缩排
  16 set backspace=2             " 可随时用退格键删除
- 17 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+ 17 [set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<] " 文本高亮和TAB
  18 set ff=unix                 " 使用unix换行符
  ```
  
