@@ -19,9 +19,11 @@ type: post
 ## 1.Jupyter
 ### (1).使用
 ```
-jupyter notebook --port='20021' --ip='0.0.0.0
+jupyter notebook --port='20021' --ip='0.0.0.0'
 ```
-- 端口范围：20021-200030
+- 端口范围：
+  SS4:20021-200030
+  SS1:30021-300030
 - ip: server IP
 
 ### (2). 设置theme
