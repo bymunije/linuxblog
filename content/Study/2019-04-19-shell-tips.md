@@ -68,7 +68,7 @@ bash Anaconda3-5.0.1-Linux-x86_64.sh
 - 4).修改环境变量使用anaconda的python，打开用户目录下的`.bashrc`,添加
 
 ```
-export PATH=/home/usrname/software/anaconda3/bin:$PATH
+export PATH="/home/usrname/software/anaconda3/bin:$PATH"
 export PYTHONPATH="/home/usrname/software/anaconda3/bin/python"
 ```
 
