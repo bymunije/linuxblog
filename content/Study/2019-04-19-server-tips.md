@@ -56,6 +56,28 @@ jupyter nbextensions_configurator enable --user
 ```
 python -m pip install --user jupyter_contrib_nbextensions
 ```
+4.推荐插件
+`Codefolding`: 代码折叠
+`Collapsible Headings`：标题折叠
+`Table of Contents(2)`:目录定位
+`Code prettify`：自动整理代码，需安装`yapf` 
+`Hinterland`：代码自动补全 
+
+### (5). cell代码自动换行
+
+打开根目录`.jupyter/nbconfig/notebook.json`文件，添加如下配置：
+```
+"MarkdownCell": {
+    "cm_config": {
+      "lineWrapping": true
+    }
+  },
+  "CodeCell": {
+    "cm_config": {
+      "lineWrapping": true
+    }
+  }
+```
 
 ## 2.Xshell直接登录服务器
 
