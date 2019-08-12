@@ -141,6 +141,7 @@ scp byzhang@100.64.166.214:/home/byzhang/data/cell_line/split_wild_mut/split_mut
 - 从1开始计数
 - 只能有一对单引号
 - 语句结束加分号(;)
+- 注意文件保存格式在linux和window的区别
 
 ### 2. Note
 - BEGIN:从第一行开始
