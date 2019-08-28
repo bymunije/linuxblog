@@ -155,7 +155,9 @@ cat file.txt | awk 'BEGIN {FS="\t";OFS="\t"} {if ($20 == "%" || $20 == "%%") {$2
 ***
 ## <font color=orange size=6>Vim</font>
 
-### 1.set list:查看分隔符
+### common command
+- `set list`:查看分隔符
+- `Ctrl+v+i`: vim中输入tab
 
 ***
 ## <font color=orange size=6>ps</font>
