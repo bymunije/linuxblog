@@ -1,4 +1,4 @@
-baseurl = "https://bymunije.netlify.com/"
+baseurl = "http://byzhang.org/"
 relativeurls = true
 languageCode = "en-us"
 hasCJKLanguage = true
