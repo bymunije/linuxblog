@@ -1,4 +1,4 @@
-baseurl = "http://www.byzhang.org/"
+baseurl = "/"
 relativeurls = true
 languageCode = "en-us"
 hasCJKLanguage = true
