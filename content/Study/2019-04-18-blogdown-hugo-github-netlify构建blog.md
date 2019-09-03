@@ -150,6 +150,10 @@ git push -u origin master
 
 <img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/管理域名服务.PNG" alt="管理域名服务" width="300px" height="100px"/>
 
+解析成功后会出现如下界面：
+
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/解析成功.PNG" alt="解析成功" width="400px" height="200px"/>
+
 # 更新博客内容
 打开Rstudio，`File -> New Project -> exist Directory -> blogdown dictionary`，点击右上角Git标签，点击commit，选择更新内容，填写`commit message`点击`commit -> push`
 
