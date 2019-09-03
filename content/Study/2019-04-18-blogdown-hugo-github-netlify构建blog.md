@@ -45,11 +45,13 @@ blogdown::install_hugo()
 ```
 
 如果报错，可以直接安装开发版：
+
 ```
 install.packages("devtools") devtools::install_github("rstudio/blogdown")
 ```
    
 如果还是报错，就手动下载安装：
+
 ```
 blogdown:::install_hugo_bin("d:/hugo.exe")
 ```
