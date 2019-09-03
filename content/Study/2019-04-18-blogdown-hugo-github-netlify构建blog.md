@@ -128,10 +128,13 @@ git push -u origin master
 
 点击右上角的购物车图标，进入付款界面，他们家的域名默认带上隐私保护，可以选择取消
 
-<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/付款1.PNG" alt="付款1" width="300x" height="100px"/>
+<div align="center">
+
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/付款1.PNG" alt="付款1" width="300px" height="100px"/>
 
 <img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/付款2.PNG" alt="付款2" width="400px" height="200px"/>
 
+</div>
 `Name.com`域名注册比较老牌且信誉好，稳定性和靠谱性还可以，但很少有促销活动，价格基本上属于中规中矩，付款完成后即可。
 
 2).进入`Netlify`，选择项目后点击`Set up a custom domain`
@@ -153,6 +156,8 @@ git push -u origin master
 解析成功后会出现如下界面：
 
 <img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/解析成功.PNG" alt="解析成功" width="400px" height="200px"/>
+
+5).添加`https`。`Netlify`使用的是`Let’s Encrypt Certificate`的免费证书，按步骤添加即可
 
 # 更新博客内容
 打开Rstudio，`File -> New Project -> exist Directory -> blogdown dictionary`，点击右上角Git标签，点击commit，选择更新内容，填写`commit message`点击`commit -> push`
