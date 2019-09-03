@@ -57,7 +57,9 @@ hugo版本为v0.55.6，导致`blogdown:::serve_site()`时出现问题`Error: fai
 
 # Github新建一个仓库
 
-<img src="/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/2.PNG" alt="" width="400px" height="300px"/>
+登录github后，在页面右上角点击`+`,然后点击新建仓库`New repository`会出现下面的界面，在`Repository name`为仓库创建名字，然后选择仓库类型为`Public`或`Private`,选择`Initialize this repository with a README`后，点击`Create repository`新建仓库。
+
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/github_new_repository.PNG" alt="github_new_repository" width="400px" height="250px"/>
 
 # blogdown建站
 
@@ -80,9 +82,9 @@ public/
 
 ## 2.初始化blogdown
 
-打开`Rstudio,File -> New Project -> New Directory -> Website using blogdown`，因为已经安装了hugo，所以去掉hugo选项,主题可以修改，点击`Create Project`创建项目
+打开Rstudio,`File -> New Project -> New Directory -> Website using blogdown`，因为已经安装了hugo，所以去掉hugo选项,主题可以修改，点击`Create Project`创建项目
 
-<img src="/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/1.png" alt="" width="400px" height="300px"/>
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/初始化blogdown.PNG" alt="初始化blogdown" width="400px" height="280px"/>
 
 ## 3.本地项目同步到github仓库
 ```
@@ -100,28 +102,58 @@ git push -u origin master
 
 点击Rstudio菜单`Help`下面的`Addins->Serve Site`，可能会提示安装几个包例如shiny、miniUI等，点击yes安装ok,，其实点击这个跟在console里面输入`blogdown::serve_site()`是一样的：
 
-<img src="/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/3.png" alt="" width="400px" height="300px"/>
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/本地运行网站.PNG" alt="本地运行网站" width="400px" height="200px"/>
 
 # 设置Netlify
 
 ## 1.注册Netlify
 
-打开Netlify(https://app.netlify.com/signup)      主页,直接在 `Sign up with one of the following`下面选择GitHub
+打开Netlify[https://app.netlify.com/signup]主页,直接在 `Sign up with one of the following`下面选择GitHub
 
 ## 2.绑定Github
 
 登录Netlify后，点击导航栏`Sites`，再点击右上角`New site from Git`，再点击Github进行下列操作：
 
-<img src="/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/4.png" alt="" width="400px" height="300px"/>
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/Creat_new_site.PNG" alt="create_new_site" width="30px" height="1px"/>
+
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/绑定github.PNG" alt="绑定github" width="400px" height="300px"/>
 
 点击`deploy site`生成网站
 
-<img src="/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/5.png" alt="" width="400px" height="300px"/>
+## 3.设置个人域名（可跳过）
+
+1).在`Name.com`购买域名时只支持`paypal`和信用卡付款，可以点击[我的优惠链接](https://www.name.com/zh-cn/referral/37dc74),进入`Name.com`的注册界面并完善个人信息，登录以后可以查找需要域名并添加到购物车
+
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/域名搜索.PNG" alt="域名搜索" width="500px" height="250px"/>
+
+点击右上角的购物车图标，进入付款界面，他们家的域名默认带上隐私保护，可以选择取消
+
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/付款1.PNG" alt="付款1" width="300x" height="100px"/>
+
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/付款2.PNG" alt="付款2" width="400px" height="200px"/>
+
+`Name.com`域名注册比较老牌且信誉好，稳定性和靠谱性还可以，但很少有促销活动，价格基本上属于中规中矩，付款完成后即可。
+
+2).进入`Netlify`，选择项目后点击`Set up a custom domain`
+
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/Set up a custom domain.PNG" alt="Set up a custom domain" width="400px" height="120px"/>
+
+3).添加域名,在`Custom domain`下面输入在`Name.com`购买的域名，点击`Yes,add domain`确认。
+
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/添加域名.PNG" alt="添加域名" width="400px" height="200px"/>
+
+4).添加完之后会出现下面的界面，需要到`Name.com`进行域名解析。点击界面的`Check DNS configuration`后，点击`Set up Netlify DNS for …`，复制四个地址到`Name.com`后，`Netlify`托管个人网站已经完成，可以直接用域名访问网站
+
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/域名解析.PNG" alt="域名解析" width="400px" height="200px"/>
+
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/四个地址.PNG" alt="四个地址" width="400px" height="200px"/>
+
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/管理域名服务.PNG" alt="管理域名服务" width="300px" height="100px"/>
 
 # 更新博客内容
-打开Rstudio，`Rstudio,File -> New Project -> exist Directory -> blogdown dictionary`，点击右上角Git标签，点击commit，选择更新内容，填写`commit message`点击`commit -> push`
+打开Rstudio，`File -> New Project -> exist Directory -> blogdown dictionary`，点击右上角Git标签，点击commit，选择更新内容，填写`commit message`点击`commit -> push`
 
-<img src="/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/7.jpeg" alt="" width="400px" height="300px"/>
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/更新blog内容.PNG" alt="更新blog内容" width="200px" height="70px"/>
 
 # 小细节的折腾
 
@@ -197,7 +229,7 @@ code {
 # Quenstion:
 ### 1.git在github远程创建仓库后, 利用gitbash进行提交本地文件的时候出现如下错误(直接在Github网页upload会导致readme.md文件不一致导致此错误）：
 
-<img src="/post/2019-04-17-blogdown-hugo-github-netlify构建blog_files/8.png" alt="" width="700px" height="250px"/>
+<img src="/Study/2019-04-18-blogdown-hugo-github-netlify构建blog_files/git_mistake.PNG" alt="git_miatake" width="400px" height="150px"/>
 
 解决办法1:
 
