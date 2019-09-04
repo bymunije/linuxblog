@@ -7,7 +7,7 @@
 <html>
     <head>
         {{ if not .Site.IsServer }}
-        {{ template "_internal/google_analytics_async.html" . }}
+            {{ template "_internal/google_analytics_async.html" . }}
         {{ end }}
         
         {{ partial "seo_schema" . }}
