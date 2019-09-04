@@ -1,12 +1,14 @@
-baseurl = "http://byzhang.org/"
+baseurl = "https://byzhang.org/"
 relativeurls = true
-languageCode = "en-us"
-hasCJKLanguage = true
+languageCode = "zh-cn"
+# word count
+hasCJKLanguage = true 
 enableEmoji = true
 title = "Bymunije"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
-paginate = 12
+# article number of every page
+paginate = 12 
 disqusShortname = "bymunije"
 googleAnalytics = "UA-147079861-1"
 pluralizeListTitles = false
