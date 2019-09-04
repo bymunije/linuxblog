@@ -6,6 +6,10 @@
 -->
 <html>
     <head>
+        {{ if not .Site.IsServer }}
+        {{ template "_internal/google_analytics_async.html" . }}
+        {{ end }}
+        
         {{ partial "seo_schema" . }}
         {{ with $.Scratch.Get "generalTitle" }}
             <title>{{ . }}</title>
@@ -92,6 +96,3 @@
 
       <!-- Wrapper -->
       <div id="wrapper">
-{{ if not .Site.IsServer }}
-{{ template "_internal/google_analytics_async.html" . }}
-{{ end }}
