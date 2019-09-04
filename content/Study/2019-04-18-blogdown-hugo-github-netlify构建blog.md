@@ -315,4 +315,3 @@ Home目录下会新建一个.gitconfig文件
 
 - 测试
 `ssh -T git@github.com`
-
