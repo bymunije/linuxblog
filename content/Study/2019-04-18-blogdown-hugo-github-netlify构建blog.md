@@ -236,6 +236,19 @@ code {
 	border: 1px solid #e1e1e8;
 }
 ```
+## 5.添加Google Analytics
+
+1). 注册[Google Analytics](https://analytics.google.com/analytics/web/)账号，可直接使用Google账号
+
+2). 在`管理 -> 媒体资源设置 -> 跟踪信息 -> 跟踪代码`页面获得`Tracking ID`即`"UA-XXXXX-Y"`
+
+3). 在``config.toml`中设置Google Analytics的ID
+
+```
+googleAnalytics = "UA-XXXXX-Y"
+```
+
+4). 修改`head.html`文件，可参照[这里](https://coreychen71.github.io/posts/2019-05/hugoaddgoogleanalytics/)
 
 # Quenstion:
 ### 1.git在github远程创建仓库后, 利用gitbash进行提交本地文件的时候出现如下错误(直接在Github网页upload会导致readme.md文件不一致导致此错误）：
