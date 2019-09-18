@@ -122,6 +122,15 @@ str_to_list = str.split('.')
 ```
 - 输出为：['www', 'google', 'com']
 
+## 5.Pandas读取文件
+
++ `header=None`:不把第一行作为列属性
+
+```
+ata1=pd.read_csv=("test.csv")#自动把第一行作列属性，第一行不能用
+data2pd.read_csv("test.csv",header=None)#不把第一行作列属性
+```
+
 ***
 # Important Code
 ### 1.将文件分成10部分
