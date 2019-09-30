@@ -65,7 +65,7 @@ du -sh
 ```
 
 ***
-## <font color=orange size=6>Common code</font>
+## <font color=orange size=6>Common Command</font>
 ### 1.查看文件夹下文件数目
 ```
   ls -l | grep '^-' | wc -l
@@ -77,6 +77,26 @@ du -sh
 - `ctrl-c`：(kill foreground process) 发送信号给前台进程组中的所有进程，强制终止程序的执行
 
 - `ctrl-d`：(terminate input,exit shell) 一个特殊的二进制值，表示EOF,作用相当于在终端输入`exit`后回车
+
+### 3.`Vim`文件格式转换
+
+Windows文件格式为`dos`，Linux文件格式为`unix`
+
+- 查看文件格式：
+命令行模式输入：`set ff`，显示`fileformat=dos`
+
+- 转换文件格式：
+1.dos_to_unix: `set ff=unix`
+2.unix_to_dos: `set ff=dos`
+
+### 4.内容提取
+
+`basename`: 从文件名中去除目录和后缀
+
+- `basename kernel/include/linux/stddef.h`得到`stddef.h`
+- `basename kernel/include/linux/stddef.h .h`得到`stddef`
+- `basename kernel/include/linux/stddef.h h`得到`stddef.`
+- `basename kernel/include/linux/`或`bsename kernel/include/linux`得到`linux`
 
 ---
 # <font size=6>代码</font>
