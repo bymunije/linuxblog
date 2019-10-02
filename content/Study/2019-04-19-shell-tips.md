@@ -66,10 +66,11 @@ du -sh
 
 ***
 ## <font color=orange size=6>Common Command</font>
-### 1.查看文件夹下文件数目
-```
-  ls -l | grep '^-' | wc -l
-```
+### 1.查看文件夹下文件和目录数目
+
+文件： `ls -l | grep '^-' | wc -l`
+目录： `ls -l | grep '^d' | wc -l`
+
 ### 2.`ctrl-z`、`ctrl-c`和`ctrl-d`的区别
 
 - `ctrl-z`：(suspend foreground process) 发送信号给前台进程组中的所有进程，常用于挂起一个进程，并没有结束进程，可以使用`fg`(前台)/`bg`(后台)恢复执行，对于`fg`恢复被挂起的进程可以使用`ctrl-z`再次挂起，而`bg`命令无法再次挂起
