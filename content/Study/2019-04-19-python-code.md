@@ -130,6 +130,17 @@ str_to_list = str.split('.')
 ata1=pd.read_csv=("test.csv")#自动把第一行作列属性，第一行不能用
 data2pd.read_csv("test.csv",header=None)#不把第一行作列属性
 ```
+## DataFrame操作
+
+1. 创建空的dataframe
+
+`df = pd.DataFrame(columns = list())`
+
+2.Series合并
+
+`df=pd.concat([series1,series2],axis=1)`,默认情况按照`axis = 0`进行`行`连接，`axis = 1`为按照`列`连接，示例可参考[这里](https://blog.csdn.net/xiaodongxiexie/article/details/71774594)
+
+
 
 ***
 # Important Code

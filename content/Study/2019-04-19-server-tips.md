@@ -175,7 +175,7 @@ export PYTHONPATH="/home/usrname/software/anaconda3/bin/python"
 
     使用如下命令激活虚拟环境(即将python的版本改变)
 
-    `Linux:  source activate your_env_name(虚拟环境名称)`
+    `Linux:  source activate your_env_name(虚拟环境名称)/conda activate your_env_name(虚拟环境名称)`
 
     `Windows: activate your_env_name(虚拟环境名称)`
 
@@ -187,7 +187,7 @@ export PYTHONPATH="/home/usrname/software/anaconda3/bin/python"
 
    使用如下命令:
 
-   `Linux: source deactivate`
+   `Linux: source deactivate/conda deactivate`
 
    `Windows: deactivate`
 
@@ -198,3 +198,8 @@ export PYTHONPATH="/home/usrname/software/anaconda3/bin/python"
 8、删除环境中的某个包
 
    使用命令`conda remove --name your_env_name  package_name` 即可
+
+9. 避免退出虚拟环境时进入`base`的虚拟环境
+
+  将`auto_activate_base: false`添加到根目录下的`.condarc`中
+
