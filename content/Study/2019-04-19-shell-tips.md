@@ -42,6 +42,13 @@ scp byzhang@100.64.166.214:/home/byzhang/data/cell_line/split_wild_mut/split_mut
 ```
 cat file.txt | awk 'BEGIN {FS="\t";OFS="\t"} {if ($20 == "%" || $20 == "%%") {$23 = $14; print $0} else if ($20 != "%" && $20 != "%%") {$23 = $22; print $0}}' > file2.txt
 ```
+
+### 3.保留第一行的标题
+
+- 可`NR==1`实现
+
+`cat file.csv | awk -F, 'NR==1;{if($9<=-5)print$0}'> select_file.csv`
+
 ***
 ## <font color=orange size=6>Vim</font>
 
