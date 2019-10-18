@@ -134,13 +134,18 @@ data2pd.read_csv("test.csv",header=None)#不把第一行作列属性
 
 1. 创建空的dataframe
 
-`df = pd.DataFrame(columns = list())`
+```
+df = pd.DataFrame(columns = list())
+```
 
 2.Series合并
 
 `df=pd.concat([series1,series2],axis=1)`,默认情况按照`axis = 0`进行`行`连接，`axis = 1`为按照`列`连接，示例可参考[这里](https://blog.csdn.net/xiaodongxiexie/article/details/71774594)
 
+## 6. 循环存储图片
 
+- 画图结束后要添加`plt.close()`,否则会在同一张图上反复画
+- 不要`plt.show()`后再储存，因为`plt.show()`后会默认清空，储存的图片回事空白
 
 ***
 # Important Code
