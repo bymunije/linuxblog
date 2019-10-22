@@ -27,6 +27,7 @@ type: post
 "tab_size": 4,
 "translate_tabs_to_spaces": true
 ```
+
 ## 2. 个性化设置
 ```
 {
