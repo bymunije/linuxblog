@@ -125,7 +125,6 @@ str_to_list = str.split('.')
 ## 5.Pandas读取文件
 
 + `header=None`:不把第一行作为列属性
-
 ```
 ata1=pd.read_csv=("test.csv")#自动把第一行作列属性，第一行不能用
 data2pd.read_csv("test.csv",header=None)#不把第一行作列属性
@@ -133,7 +132,6 @@ data2pd.read_csv("test.csv",header=None)#不把第一行作列属性
 ## DataFrame操作
 
 1. 创建空的dataframe
-
 ```
 df = pd.DataFrame(columns = list())
 ```
@@ -146,6 +144,16 @@ df = pd.DataFrame(columns = list())
 
 - 画图结束后要添加`plt.close()`,否则会在同一张图上反复画
 - 不要`plt.show()`后再储存，因为`plt.show()`后会默认清空，储存的图片回事空白
+
+## 7.选择列表中最长的字符串
+
+`max(list,key = len)`
+
+```
+mylist = ['123','123456','1234']
+print (max(mylist, key=len))
+out:123456
+```
 
 ***
 # Important Code
