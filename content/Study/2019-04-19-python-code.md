@@ -74,6 +74,7 @@ with open('file.txt','w') as g:
         print(('\t').join([str(i) for i in [key] +dict[key]),file = g)
 ```
 #### (3).字典
+
 ##### <1>.测试字典是否包含指定的键item
 - python 2
 ```
@@ -84,7 +85,6 @@ if dict.has_key(item): #中间
 if item in dict: #最快
 if item in dict.keys()： #最慢
 ```
-
 ##### <2>.查看字典中键和值
 
 - python 2
@@ -97,15 +97,16 @@ print(dict.values()[0:5])#值
 print(list(dict.keys())[0:5])#键
 print(list(dict.values())[0:5])#值
 ```
-## 4.list和str转换
-<1>. list to str
+## 4.list和str转
+
+#### <1>. list to str
 ```
 list = ['www', 'google', 'com']
 list_to_str = ";"join(list)
 ```
 - 输出为：'www;google;com'
 
-<2>. str to list
+#### <2>. str to list
 ```
 str = 'www.google.com'
 str_to_list = str.split('.')
@@ -121,11 +122,11 @@ data2pd.read_csv("test.csv",header=None)#不把第一行作列属性
 ```
 ## DataFrame操作
 
-1. 创建空的dataframe
+#### 1. 创建空的dataframe
 ```
 df = pd.DataFrame(columns = list())
 ```
-2.Series合并
+#### 2.Series合并
 
 `df=pd.concat([series1,series2],axis=1)`,默认情况按照`axis = 0`进行`行`连接，`axis = 1`为按照`列`连接，示例可参考[这里](https://blog.csdn.net/xiaodongxiexie/article/details/71774594)
 
