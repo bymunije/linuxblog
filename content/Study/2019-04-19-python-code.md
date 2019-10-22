@@ -62,6 +62,7 @@ importlib.reload(sys)
 ```
 
 #### (2).写文件
+
 - Python2
 ```
 with open('file.txt','w') as g:
