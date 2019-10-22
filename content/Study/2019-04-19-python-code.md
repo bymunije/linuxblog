@@ -60,6 +60,7 @@ import sys
 import importlib
 importlib.reload(sys)
 ```
+
 #### (2).写文件
 - Python2
 ```
@@ -73,8 +74,8 @@ with open('file.txt','w') as g:
     for i in dict.keys():
         print(('\t').join([str(i) for i in [key] +dict[key]),file = g)
 ```
-#### (3).字典
 
+#### (3).字典
 ##### <1>.测试字典是否包含指定的键item
 - python 2
 ```
@@ -85,8 +86,8 @@ if dict.has_key(item): #中间
 if item in dict: #最快
 if item in dict.keys()： #最慢
 ```
-##### <2>.查看字典中键和值
 
+##### <2>.查看字典中键和值
 - python 2
 ```
 print(dict.keys()[0:5])#键
@@ -97,8 +98,8 @@ print(dict.values()[0:5])#值
 print(list(dict.keys())[0:5])#键
 print(list(dict.values())[0:5])#值
 ```
-## 4.list和str转
 
+## 4.list和str转
 #### <1>. list to str
 ```
 list = ['www', 'google', 'com']
@@ -120,22 +121,23 @@ str_to_list = str.split('.')
 ata1=pd.read_csv=("test.csv")#自动把第一行作列属性，第一行不能用
 data2pd.read_csv("test.csv",header=None)#不把第一行作列属性
 ```
-## DataFrame操作
 
+## 6.DataFrame操作
 #### 1. 创建空的dataframe
 ```
 df = pd.DataFrame(columns = list())
 ```
+
 #### 2.Series合并
 
 `df=pd.concat([series1,series2],axis=1)`,默认情况按照`axis = 0`进行`行`连接，`axis = 1`为按照`列`连接，示例可参考[这里](https://blog.csdn.net/xiaodongxiexie/article/details/71774594)
 
-## 6. 循环存储图片
+## 7. 循环存储图片
 
 - 画图结束后要添加`plt.close()`,否则会在同一张图上反复画
 - 不要`plt.show()`后再储存，因为`plt.show()`后会默认清空，储存的图片回事空白
 
-## 7.选择列表中最长的字符串
+## 8.选择列表中最长的字符串
 
 `max(list,key = len)`
 
