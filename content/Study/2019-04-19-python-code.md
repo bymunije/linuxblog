@@ -48,13 +48,17 @@ os.system('paste {} {} | tr -d "\r" > {}'.format('a.txt','b.txt','a_b.txt'))
 ```
 # -*- coding: UTF-8 -*- 
 ```
+
 - Python2
+
 ```
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 ```
+
 - Python3
+
 ```
 import sys
 import importlib
@@ -64,12 +68,15 @@ importlib.reload(sys)
 #### (2).写文件
 
 - Python2
+
 ```
 with open('file.txt','w') as g:
     for i in dict.keys():
         print >>g, ('\t').join([str(i) for i in dict[key])
 ```
+
 - Python3
+
 ```
 with open('file.txt','w') as g:
     for i in dict.keys():
@@ -77,54 +84,71 @@ with open('file.txt','w') as g:
 ```
 
 #### (3).字典
+
 ##### <1>.测试字典是否包含指定的键item
+
 - python 2
+
 ```
 if dict.has_key(item): #中间
 ```
+
 - python 3
+
 ```
 if item in dict: #最快
 if item in dict.keys()： #最慢
 ```
 
 ##### <2>.查看字典中键和值
+
 - python 2
+
 ```
 print(dict.keys()[0:5])#键
 print(dict.values()[0:5])#值
 ```
+
 - python 3
+
 ```
 print(list(dict.keys())[0:5])#键
 print(list(dict.values())[0:5])#值
 ```
 
 ## 4.list和str转
+
 #### <1>. list to str
+
 ```
 list = ['www', 'google', 'com']
 list_to_str = ";"join(list)
 ```
+
 - 输出为：'www;google;com'
 
 #### <2>. str to list
+
 ```
 str = 'www.google.com'
 str_to_list = str.split('.')
 ```
+
 - 输出为：['www', 'google', 'com']
 
 ## 5.Pandas读取文件
 
 + `header=None`:不把第一行作为列属性
+
 ```
 ata1=pd.read_csv=("test.csv")#自动把第一行作列属性，第一行不能用
 data2pd.read_csv("test.csv",header=None)#不把第一行作列属性
 ```
 
 ## 6.DataFrame操作
+
 #### 1. 创建空的dataframe
+
 ```
 df = pd.DataFrame(columns = list())
 ```
