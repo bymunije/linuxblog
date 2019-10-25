@@ -47,7 +47,7 @@ gdebi rstudio-server-0.97.551-amd64.deb
 ### 1.4) 查看Rstudio-server是否在运行
 
 ```
-ps -aux|grep rstudio
+ps -aux | grep rstudio
 ```
 
 若显示`rstudio+  1777  0.1  0.0 195676  8476 ?        Ssl  20:47   0:00 /usr/lib/rstudio-server/bin/rserver`,表明安装成功
@@ -75,3 +75,5 @@ sudo rstudio-server restart
 - 查看是否安装正确 `sudo rstudio-server verify-installation`
 - 查看状态 `sudo rstudio-server status`
 - 查看服务端ip地址 `ifconfig`
+- 停止运行 `sudo systemctl stop rstudio-server`
+- 运行 `sudo systemctl start rstudio-server`
