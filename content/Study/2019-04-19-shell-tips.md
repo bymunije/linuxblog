@@ -49,6 +49,10 @@ cat file.txt | awk 'BEGIN {FS="\t";OFS="\t"} {if ($20 == "%" || $20 == "%%") {$2
 
 `cat file.csv | awk -F, 'NR==1;{if($9<=-5)print$0}'> select_file.csv`
 
+### 4.文件中添加一列一样的字符串
+
+`awk '$0=$0"\t20191027"' file.txt`
+
 ***
 ## <font color=orange size=6>Vim</font>
 
