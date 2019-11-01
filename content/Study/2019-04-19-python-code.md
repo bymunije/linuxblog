@@ -157,6 +157,23 @@ df = pd.DataFrame(columns = list())
 
 `df=pd.concat([series1,series2],axis=1)`,默认情况按照`axis = 0`进行`行`连接，`axis = 1`为按照`列`连接，示例可参考[这里](https://blog.csdn.net/xiaodongxiexie/article/details/71774594)
 
+#### 3.合并列数据为新列
+
+- 如果某一列是非`str`类型的数据，那么我们需要用到`map(str)`做转换
+```
+dataframe["newColumn"] = dataframe["age"].map(str) + dataframe["phone"] + dataframe["address"]
+```
+#### 4.Dataframe中按照某一列对dataframe重新排列
+
+- 降序排列
+```
+df.reindex(df['col_1'].abs().sort_values(ascending=False).index)
+```
+- 升序排列
+```
+df.reindex(df['col_1'].abs().sort_values(ascending=True).index)
+```
+
 ## 7. 循环存储图片
 
 - 画图结束后要添加`plt.close()`,否则会在同一张图上反复画
@@ -171,6 +188,14 @@ mylist = ['123','123456','1234']
 print (max(mylist, key=len))
 out:123456
 ```
+
+## 9.字符串操作
+
+1). `string.strip()`: 去除**头尾**字符和空白符（包括\n、\r、\t、' '，即：换行、回车、制表符、空格）
+2). `string.lstrip()`: 去除**开头**字符和空白符（包括\n、\r、\t、' '，即：换行、回车、制表符、空格）
+3). `string.rstrip()`: 去除**结尾**字符和空白符（包括\n、\r、\t、' '，即：换行、回车、制表符、空格）
+- 这些函数只删除头尾的字符，中间的不会删除
+- 返回的是去除字符的string副本，string本身不会发生改变
 
 ***
 # Important Code

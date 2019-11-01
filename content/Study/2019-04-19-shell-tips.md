@@ -57,6 +57,7 @@ cat file.txt | awk 'BEGIN {FS="\t";OFS="\t"} {if ($20 == "%" || $20 == "%%") {$2
 ## <font color=orange size=6>Vim</font>
 
 ### common command
+
 - `set list`:查看分隔符
 - `ctrl+v+i`: vim中输入tab
 - `shift+mouse`:vim中复制
@@ -110,6 +111,7 @@ Windows文件格式为`dos`，Linux文件格式为`unix`
 - `basename kernel/include/linux/stddef.h h`得到`stddef.`
 - `basename kernel/include/linux/`或`bsename kernel/include/linux`得到`linux`
 
+### 5. `grep -w`: 精确匹配
 ---
 # <font size=6>代码</font>
 ---
