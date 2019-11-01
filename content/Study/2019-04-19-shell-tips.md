@@ -111,7 +111,10 @@ Windows文件格式为`dos`，Linux文件格式为`unix`
 - `basename kernel/include/linux/stddef.h h`得到`stddef.`
 - `basename kernel/include/linux/`或`bsename kernel/include/linux`得到`linux`
 
-### 5. `grep -w`: 精确匹配
+### 5. grep
+
+- `grep -w`: 精确匹配
+- `grep -v`:反向选择
 ---
 # <font size=6>代码</font>
 ---

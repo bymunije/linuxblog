@@ -159,7 +159,7 @@ df = pd.DataFrame(columns = list())
 
 #### 3.合并列数据为新列
 
-- 如果某一列是非`str`类型的数据，那么我们需要用到`map(str)`做转换
+- 如果某一列是非`str`类型的数据，需要用`map(str)`做转换
 ```
 dataframe["newColumn"] = dataframe["age"].map(str) + dataframe["phone"] + dataframe["address"]
 ```
