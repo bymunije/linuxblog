@@ -173,6 +173,11 @@ df.reindex(df['col_1'].abs().sort_values(ascending=False).index)
 ```
 df.reindex(df['col_1'].abs().sort_values(ascending=True).index)
 ```
+#### 5.列名
+
+- 重命名所有的列：`df.columns = ['col_1','col_2']`
+- 重命名某几列： `df = df.rename(columns = {'old_col','new_col'})`
+
 
 ## 7. 循环存储图片
 
@@ -196,6 +201,19 @@ out:123456
 3). `string.rstrip()`: 去除**结尾**字符和空白符（包括\n、\r、\t、' '，即：换行、回车、制表符、空格）
 - 这些函数只删除头尾的字符，中间的不会删除
 - 返回的是去除字符的string副本，string本身不会发生改变
+
+## 10.清空文件并替换内容
+
+```
+def modify_text():
+    with open('test.txt', "r+") as f:
+        read_data = f.read()
+        f.seek(0)
+        f.truncate()   #清空文件
+        f.write(read_data.replace('apple', 'android'))
+```
+- `f.seek(0)`:将文件定位到`postion 0`
+- `r+`:读写
 
 ***
 # Important Code
