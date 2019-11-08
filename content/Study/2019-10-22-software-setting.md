@@ -66,7 +66,7 @@ type: post
    
 1. 本地打开`cmd`或`git bash`，输入`ssh-keygen`后一路回车，会在用户目录下的`.ssh` 文件夹内生成`id_rsa`和`id_rsa.pub`两个文件，分别对应为私钥和公钥
 2. 将`id_rsa.pub`文件中的内容复制到远程主机用户目录下`.ssh`文件夹内名为 `authorized_keys`的文件中
-3. 在左下角的设置的扩展中选择`Remote-SSH`,然后勾选`Remote.SSH:Show Login Terminal`即可
+3. 在左下角的设置中选择扩展，然后选择`Remote-SSH`,然后勾选`Remote.SSH:Show Login Terminal`即可
 
 ## 3.推荐的插件
 
@@ -78,7 +78,7 @@ type: post
 
 # Dokan + SSHFS(WinSSHFS)文件系统
 
-1. [`Dokan`](https://github.com/dokan-dev/dokany/releases)是用户态的文件系统驱动，可称之为`fuse for windows`,可以用来开发虚拟磁盘，即在 “我的电脑” 中虚拟出一个硬盘，也可以是可移动磁盘或者网络硬盘
+1. [Dokan](https://github.com/dokan-dev/dokany/releases)是用户态的文件系统驱动，可称之为`fuse for windows`,可以用来开发虚拟磁盘，即在 “我的电脑” 中虚拟出一个硬盘，也可以是可移动磁盘或者网络硬盘
 
 2. SSHFS是基于`FUSE`构建的`SSH` 文件系统客户端程序，通过它远程主机的配置无需作任何改变，即可透过`SSH` 协议来挂载远程文件系统
 
