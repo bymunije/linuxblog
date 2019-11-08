@@ -70,11 +70,15 @@ type: post
 
 ## 3.推荐的插件
 
-1). Chinese (Simplified) Language Pack for Visual Studio Code
-2). Remote Development
-3). Sublime Text Keymap and Settings Importer
-4). Python for VSCode
-5). R
+1). `Chinese (Simplified) Language Pack for Visual Studio Code`: 界面语言为中文
+2). `Remote Development`: 连接远端服务器
+3). `Sublime Text Keymap and Settings Importer`： sublime快捷键
+4). `Python for VSCode`： 运行python
+5). `Beautiful`: 格式化代码的工具
+6). `Path Intellisense`: 自动路径补全,默认不带这个功能
+7). `Vscode-icons 让vscode`: 资源目录加上图标、必备
+8). `Auto-Open Markdown Preview markdown`: 文件自动开启预览
+9). `Setting Sync`: 在不同电脑同步你的配置和插件
 
 # Dokan + SSHFS(WinSSHFS)文件系统
 
