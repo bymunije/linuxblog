@@ -63,7 +63,7 @@ type: post
 5.左边会出现上一步设置的服务器名称，点击选择`Connect to Host in Current Window` 即可开始连接,若左下角出现绿色的`SSH: <Host>`的标识，即表示已成功连接到了远程主机
 
 ## 2.配置SSH密钥登录
-
+   
 1. 本地打开`cmd`或`git bash`，输入`ssh-keygen`后一路回车，会在用户目录下的`.ssh` 文件夹内生成`id_rsa`和`id_rsa.pub`两个文件，分别对应为私钥和公钥
 2. 将`id_rsa.pub`文件中的内容复制到远程主机用户目录下`.ssh`文件夹内名为 `authorized_keys`的文件中
 3.在左下角的设置的扩展中选择`Remote-SSH`,然后勾选`Remote.SSH:Show Login Terminal`即可
