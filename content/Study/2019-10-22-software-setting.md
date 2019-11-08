@@ -66,7 +66,7 @@ type: post
 
 1. 本地打开`cmd`或`git bash`，输入`ssh-keygen`后一路回车，会在用户目录下的`.ssh` 文件夹内生成`id_rsa`和`id_rsa.pub`两个文件，分别对应为私钥和公钥
 2. 将`id_rsa.pub`文件中的内容复制到远程主机用户目录下`.ssh`文件夹内名为 `authorized_keys`的文件中
-3.在左下角的设置的扩展中选择`Remote-SSH`，然后勾选`Remote.SSH:Show Login Terminal`
+3.在左下角的设置的扩展中选择`Remote-SSH`，然后勾选`Remote.SSH:Show Login Terminal`即可
 
 ## 3.推荐的插件
 
