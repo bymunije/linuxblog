@@ -67,3 +67,33 @@ type: post
 1. 本地打开`cmd`或`git bash`，输入`ssh-keygen`后一路回车，会在用户目录下的`.ssh` 文件夹内生成`id_rsa`和`id_rsa.pub`两个文件，分别对应为私钥和公钥
 2. 将`id_rsa.pub`文件中的内容复制到远程主机用户目录下`.ssh`文件夹内名为 `authorized_keys`的文件中
 3.在左下角的设置的扩展中选择`Remote-SSH`，然后勾选`Remote.SSH:Show Login Terminal`
+
+## 3.推荐的插件
+
+1).Chinese (Simplified) Language Pack for Visual Studio Code
+2).Remote Development
+3).Sublime Text Keymap and Settings Importer
+4).Python for VSCode
+5).R
+
+# Dokan + SSHFS(WinSSHFS)文件系统
+
+1.[`Dokan`](https://github.com/dokan-dev/dokany/releases)是用户态的文件系统驱动，可称之为`fuse for windows`,可以用来开发虚拟磁盘，即在 “我的电脑” 中虚拟出一个硬盘，也可以是可移动磁盘或者网络硬盘
+
+2.SSHFS是基于`FUSE`构建的`SSH` 文件系统客户端程序，通过它远程主机的配置无需作任何改变，即可透过`SSH` 协议来挂载远程文件系统
+
+3.配置[WinSSHFS](https://github.com/feo-cz/win-sshfs/releases)可参考下图.点击`Add`，输入要链接的服务器的名称、IP地址、端口、用户名、密码等信息，选择好要挂载的目录，点击`save`和`mount`
+
+- `Drive Name`: 服务器名称（自定义）
+- `Host`: 服务器IP地址
+- `Port`: 端口
+- `Username`: 用户名
+- `Password`: 密码
+
+<img src="/Study/2019-10-22-software-setting_files/WinSSHFS.jpg" alt="WinSSHFS" width="400px" height="200px"/>
+
+4.当出现`could not connect Version error`错误时，`Dakan`版本需为`1.2.0.1000`
+
+
+
+
