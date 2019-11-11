@@ -91,6 +91,8 @@ type: post
 - `password`：密码
 - `remotePath`：服务器目录
 本地文件修改之后保存，即可同步到服务器
+<img src="/Study/2019-10-22-software-setting_files/vscode-sftp.png" alt="vscode-sftp" width="400px" height="200px"/>
+
 
 # Dokan + SSHFS(WinSSHFS)文件系统
 
