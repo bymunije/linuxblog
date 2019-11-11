@@ -71,7 +71,7 @@ type: post
 ## 3.推荐的插件
 
 1). `Chinese (Simplified) Language Pack for Visual Studio Code`: 界面语言为中文
-2). `Remote Development`: 连接远端服务器
+2). `Remote Development(Remote SSH)`: 连接远端服务器
 3). `Sublime Text Keymap and Settings Importer`： sublime快捷键
 4). `Python for VSCode`： 运行python
 5). `Beautiful`: 格式化代码的工具
@@ -79,7 +79,18 @@ type: post
 7). `Vscode-icons 让vscode`: 资源目录加上图标、必备
 8). `Auto-Open Markdown Preview markdown`: 文件自动开启预览
 9). `Setting Sync`: 在不同电脑同步你的配置和插件
-10). `VS Code SFTP`: 直接编辑远端linux文件
+10). `VS Code SFTP`: 直接编辑远端linux文件,具体配置可参考[这里](https://www.jianshu.com/p/0724921285d4)
+
+## 4.`VS Code SFTP`本地文件同步服务器
+
+快捷键`Ctrl+shift+P`打开指令窗口，输入`sftp:config`回车，会在当前工程的`.vscode`文件夹下生成`sftp.json`文件，其中需要修改`name、host、port、username、password、remotePath`
+- `name`：服务器名称，自定义
+- `host`：服务器IP
+- `port`：服务器端口
+- `username`：用户名
+- `password`：密码
+- `remotePath`：服务器目录
+本地文件修改之后保存，即可同步到服务器
 
 # Dokan + SSHFS(WinSSHFS)文件系统
 
