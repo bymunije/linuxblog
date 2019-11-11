@@ -79,6 +79,7 @@ type: post
 7). `Vscode-icons 让vscode`: 资源目录加上图标、必备
 8). `Auto-Open Markdown Preview markdown`: 文件自动开启预览
 9). `Setting Sync`: 在不同电脑同步你的配置和插件
+10). `VS Code SFTP`: 直接编辑远端linux文件
 
 # Dokan + SSHFS(WinSSHFS)文件系统
 
