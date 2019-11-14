@@ -93,6 +93,27 @@ type: post
 本地文件修改之后保存，即可同步到服务器
 <img src="/Study/2019-10-22-software-setting_files/vscode-sftp.png" alt="vscode-sftp" width="400px" height="200px"/>
 
+## 5.修改光标所在行背景、边框及行号
+
+打开`.vscode`下的`{}setting.json`,输入如下内容：
+```
+"workbench.colorCustomizations": {
+        //左侧行号颜色
+        "editorLineNumber.foreground": "#17a346", 
+        //左侧行号区颜色
+        "editorGutter.background": "#020230",
+        //光标颜色
+        "editorCursor.foreground": "#d41313",
+        //光标所在行背景（70为透明度）
+        "editor.lineHighlightBackground": "#5f676970",
+        //光标所在行边框色
+        "editor.lineHighlightBorder": "#00000000"
+```
+
+## 6.可参考页面
+
+- [第一次使用VS Code时你应该知道的一切配置](https://juejin.im/post/5cb87c6e6fb9a068a03af93a)
+
 
 # Dokan + SSHFS(WinSSHFS)文件系统
 
