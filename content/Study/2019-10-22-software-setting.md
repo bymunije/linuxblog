@@ -51,7 +51,11 @@ type: post
 
 # Visual Studio Code
 
-## 1.配置远端服务器
+## 1.可参考页面
+
+- [第一次使用VS Code时你应该知道的一切配置](https://juejin.im/post/5cb87c6e6fb9a068a03af93a)
+
+## 2.配置远端服务器
 
 1. [官网](https://code.visualstudio.com/)下载安装。安装后默认为英文界面，可在扩展按钮搜索`Chinese`，选择第一个`Chinese (Simplified) Language Pack for Visual Studio Code`，重启后软件即可变成中文
 2. 在扩展按钮搜索`Remote Development`,可自动安装`Remote-SSH`、`Remote-Containers`、`Remote-WSL`等依赖插件
@@ -62,13 +66,13 @@ type: post
 - `User`:登录远程服务器的用户名
 5. 左边会出现上一步设置的服务器名称，点击选择`Connect to Host in Current Window` 即可开始连接,若左下角出现绿色的`SSH: <Host>`的标识，即表示已成功连接到了远程主机
 
-## 2.配置SSH密钥登录
+## 3.配置SSH密钥登录
    
 1. 本地打开`cmd`或`git bash`，输入`ssh-keygen`后一路回车，会在用户目录下的`.ssh` 文件夹内生成`id_rsa`和`id_rsa.pub`两个文件，分别对应为私钥和公钥
 2. 将`id_rsa.pub`文件中的内容复制到远程主机用户目录下`.ssh`文件夹内名为 `authorized_keys`的文件中
 3. 在左下角的设置中选择扩展，然后选择`Remote-SSH`,然后勾选`Remote.SSH:Show Login Terminal`即可
 
-## 3.推荐的插件
+## 4.推荐的插件
 
 1). `Chinese (Simplified) Language Pack for Visual Studio Code`: 界面语言为中文
 2). `Remote Development(Remote SSH)`: 连接远端服务器
@@ -81,7 +85,7 @@ type: post
 9). `Setting Sync`: 在不同电脑同步你的配置和插件
 10). `VS Code SFTP`: 直接编辑远端linux文件,具体配置可参考[这里](https://www.jianshu.com/p/0724921285d4)
 
-## 4.`VS Code SFTP`本地文件同步服务器
+## 5.`VS Code SFTP`本地文件同步服务器
 
 快捷键`Ctrl+shift+P`打开指令窗口，输入`sftp:config`回车，会在当前工程的`.vscode`文件夹下生成`sftp.json`文件，其中需要修改`name、host、port、username、password、remotePath`
 - `name`：服务器名称，自定义
@@ -93,7 +97,7 @@ type: post
 本地文件修改之后保存，即可同步到服务器
 <img src="/Study/2019-10-22-software-setting_files/vscode-sftp.png" alt="vscode-sftp" width="400px" height="200px"/>
 
-## 5.修改光标所在行背景、边框及行号
+## 6.修改光标所在行背景、边框及行号
 
 打开`.vscode`下的`{}setting.json`,输入如下内容：
 ```
@@ -110,9 +114,13 @@ type: post
         "editor.lineHighlightBorder": "#00000000"
 ```
 
-## 6.可参考页面
+## 7.设置工作区隐藏文件或文件夹
 
-- [第一次使用VS Code时你应该知道的一切配置](https://juejin.im/post/5cb87c6e6fb9a068a03af93a)
+`Ctrl+shift+P`打开显示所有命令，在输入框输入`settings`回车，然后在页面搜索`files.exclude`,如下所示添加模式进行设置
+
+<img src="/Study/2019-10-22-software-setting_files/hide_filePNG.PNG" alt="hide_file" width="400px" height="200px"/>
+
+
 
 
 # Dokan + SSHFS(WinSSHFS)文件系统
