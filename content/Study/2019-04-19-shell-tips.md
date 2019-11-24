@@ -53,6 +53,10 @@ cat file.txt | awk 'BEGIN {FS="\t";OFS="\t"} {if ($20 == "%" || $20 == "%%") {$2
 
 `awk '$0=$0"\t20191027"' file.txt`
 
+### 5.`sort`排序时排除第一行
+
+`awk 'NR==1{print $0;next}{print $0 | "sort -u"}'`
+
 ***
 ## <font color=orange size=6>Vim</font>
 
