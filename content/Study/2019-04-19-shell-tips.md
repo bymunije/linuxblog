@@ -57,6 +57,14 @@ cat file.txt | awk 'BEGIN {FS="\t";OFS="\t"} {if ($20 == "%" || $20 == "%%") {$2
 
 `awk 'NR==1{print $0;next}{print $0 | "sort -u"}'`
 
+如果写完整应该是：
+
+`awk '{if(NR==1) {print $0;next}} {print $0 | "sort -u"}'`
+
+### 6.调整`txt`文件中列的顺序
+
+`awk '{print $2,$3,$1,$4}' OF=, OFS=, 6G.txt`
+
 ***
 ## <font color=orange size=6>Vim</font>
 
@@ -74,6 +82,16 @@ ps -aux | grep byzhang
 ```
 
 ***
+
+***
+## <font color=orange size=6>grep</font>
+
+- `grep -w`: 精确匹配
+- `grep -v`:反向选择
+- `grep -i`:忽略大小写
+
+***
+
 ## <font color=orange size=6>du</font>
 ### 1.查看占用磁盘大小
 ```
@@ -106,6 +124,13 @@ Windows文件格式为`dos`，Linux文件格式为`unix`
 1.dos_to_unix: `set ff=unix`
 2.unix_to_dos: `set ff=dos`
 
+- 替换文件中`^M`符号：
+`tr -d '\r'`
+
+- 中文乱码：
+临时方法：打开`vim`,输入`set encoding=utf-8`
+一次性方法：在`.vimrc`文件中添加`set encoding=utf-8`
+
 ### 4.内容提取
 
 `basename`: 从文件名中去除目录和后缀
@@ -115,10 +140,11 @@ Windows文件格式为`dos`，Linux文件格式为`unix`
 - `basename kernel/include/linux/stddef.h h`得到`stddef.`
 - `basename kernel/include/linux/`或`bsename kernel/include/linux`得到`linux`
 
-### 5. grep
+### 5.`shell`脚本执行显示错误`bad substitution`
 
-- `grep -w`: 精确匹配
-- `grep -v`:反向选择
+这与`shell`使用的是`/bin/sh`，还是`/bin/bash`有关系
+
+
 ---
 # <font size=6>代码</font>
 ---

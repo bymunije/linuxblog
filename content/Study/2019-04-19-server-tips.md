@@ -79,6 +79,13 @@ python -m pip install --user jupyter_contrib_nbextensions
   }
 ```
 
+### (6). cell快捷键
+
+- `Esc + F`:查找替换
+- `Shift + Down`:向下选中多个cell，便于复制粘贴和修改
+- `Shift + M`:合并多个cell
+
+
 ## 2.Xshell直接登录服务器
 
 ``` 
@@ -87,11 +94,11 @@ ssh byzhang@100.64.166.214 22
 
 ## 3.Rstudio Server
 - server_ip:端口
-  - SS1:20004
-    SS4:20014
+  - SS1:32222
+    SS4:20018
   
 ```
-100.64.166.214:20004
+100.64.166.214:32222
 ```
 - 查看状态
 
@@ -121,6 +128,7 @@ rstudio-server status
   set backspace=2             " 可随时用退格键删除
   set ff=unix                 " 使用unix换行符
   set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:- " 文本高亮和tab
+  command! -bang Q q<bang>
   
  ```
  
