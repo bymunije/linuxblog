@@ -97,6 +97,10 @@ ps -aux | grep byzhang
 ```
 du -sh
 ```
+***
+## <font color=orange size=6>ln</font>
+
+### **ln** : link files,为某一文件在另一个位置建立同步链接
 
 ***
 ## <font color=orange size=6>Common Command</font>
